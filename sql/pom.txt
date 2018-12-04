@@ -1,0 +1,34 @@
+
+drop table pessoacotatitular_cota cascade;
+
+insert into pessoa (nome, cpfcnpj) values ('diego', '09351975907');
+
+
+insert into pessoa (nome, cpfcnpj) values ('josé', '01351975907');
+
+
+
+insert into pessoa (nome, cpfcnpj) values ('maria', '05351975907');
+
+insert into pessoacota (id) values (3);
+
+insert into pessoacota_cota values pessoa
+insert into hotel (id, nome, cpfcnpj) values (1, 'hotel parke', '12133421');
+insert into bloco (id, numero, hotel_id) values (1,10,1);
+insert into apartamento (id, numero,bloco_id) values (1,100,1);
+insert into cota (id, apartamento_id, numero) values (1,1,001);
+
+
+drop table apartamento cascade;
+drop table pessoacotatitular_cota cascade;
+drop table bloco cascade;
+drop table bloco_apartamento cascade;
+drop table cota cascade;
+drop table hotel cascade;
+drop table hotel_bloco cascade;
+drop table pessoa cascade;
+drop table pessoacotatitular cascade;
+drop table pessoacota_cota cascade;
+drop table apartamento_cota cascade;
+drop table pessoacota cascade;
+  

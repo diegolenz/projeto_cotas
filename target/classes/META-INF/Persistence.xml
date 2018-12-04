@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="controle_hotel" transaction-type="RESOURCE_LOCAL">
+	  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	  <class>lib.model.cotas.Cota</class>
+	  <class>lib.model.apartamento.Apartamento</class>
+	  <class>lib.model.hotel.Hotel</class>
+	  <class>lib.model.pessoa.Pessoa</class>
+	  <class>lib.model.pessoa.Pessoajuridica</class>
+	  <class>lib.model.pessoa.TipoPessoa</class>
+	  <class>lib.model.endereco.Endereco</class>
+	  <class>lib.model.endereco.bairro.Bairro</class>
+	  <class>lib.model.endereco.cidade.Cidade</class>
+	  <class>lib.model.endereco.provincia.Provincia</class>
+	  <class>lib.model.endereco.estado.Estado</class>
+	  <properties>
+		  <!--  Propriedades JDBC  -->
+		  <property name="javax.persistence.jdbc.driver" value=" org.postgresql.Driver"/>
+		  <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/controle_hotel"/>
+		  <property name="javax.persistence.jdbc.user" value="postgres"/>
+		  <property name="javax.persistence.jdbc.password" value="postgres"/>
+
+		  <!--  Configurações específicas do Hibernate  -->
+		  <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+		  <!--  <property name="hibernate.hbm2ddl.auto" value="update"/> -->
+
+		  <property name="hibernate.format_sql" value="true"/>
+           <property name="hibernate.show_sql" value="true"/>
+       </properties>
+   </persistence-unit>
+ </persistence>
