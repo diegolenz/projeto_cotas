@@ -52,12 +52,14 @@ public class NovoEndereco extends javax.swing.JDialog {
     private Bairro bairroSelecionado;
     private Pais paisSelecionado;
     private Provincia provinciaSelecionado;
+    private Bairro meubairro=new Bairro();
 
     private EstadoDao estadoDao =new EstadoDao();
 
     private Endereco endereco;
     private final Callback callback;
     private DefaultComboBoxModel comboBoxModel;
+    private DefaultComboBoxModel comboBoxModelbairro;
 
     public ObservableList<Estado> getEstados() {
         return estados;
@@ -454,9 +456,9 @@ public class NovoEndereco extends javax.swing.JDialog {
     }//GEN-LAST:event_cmbEstadoItemStateChanged
 
     private void cmbBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBairroActionPerformed
-         comboBoxModel=new DefaultComboBoxModel(cidadeSelecionada.getBairroList().toArray());
+       /*  comboBoxModel=new DefaultComboBoxModel(cidadeSelecionada.getBairroList().toArray());
 
-        this.cmbBairro.setModel(comboBoxModel);
+        this.cmbBairro.setModel(comboBoxModel);*/
         bairroSelecionado=(Bairro) cmbBairro.getSelectedItem();
         boolean itemSelecionado = bairroSelecionado != null;
 
@@ -483,8 +485,15 @@ public class NovoEndereco extends javax.swing.JDialog {
 
     private void btnNovoBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoBairroActionPerformed
         JanelaPrincipal janela=new JanelaPrincipal();
-        Bairro bairro=new Bairro();
-        NovoBairro form = new NovoBairro(this, false, bairro);
+
+        NovoBairro.Callback callback= (bairro) ->{
+            meubairro =bairro;
+            bairros.add(meubairro);
+            this.comboBoxModelbairro=new DefaultComboBoxModel(bairros.toArray());
+            this.cmbBairro.setModel(comboBoxModelbairro);
+
+        };
+        NovoBairro form = new NovoBairro(this, callback, false, meubairro);
         form.setVisible(true);
         form.setcidade(cidadeSelecionada);
         if (form.isSalvo()) {
@@ -560,6 +569,7 @@ public class NovoEndereco extends javax.swing.JDialog {
         endereco=new Endereco();
         endereco.setComplemento(this.edtComplemento.getText());
         endereco.setBairro(bairroSelecionado);
+        endereco.setLogradouro("as");
 
         /*ValidacaoFacade.Resultado resultado = ValidacaoFacade.validar(endereco);
         if (resultado.isValoresInvalidos()) {

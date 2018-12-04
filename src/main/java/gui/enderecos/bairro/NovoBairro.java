@@ -5,6 +5,7 @@
  */
 package gui.enderecos.bairro;
 
+import gui.enderecos.NovoEndereco;
 import javafx.collections.ObservableList;
 import lib.dao.imp.endereco.bairro.BairroDao;
 import lib.dao.imp.endereco.estado.EstadoDao;
@@ -35,11 +36,19 @@ public class NovoBairro extends javax.swing.JDialog {
     private  boolean modoAdicao;
     private boolean salvo;
     private Pais ultimoPais;
+    private final Callback callback;
     /**
      * Creates new form NovoBairro
      */
-    public NovoBairro(Window parent, boolean modal, Bairro  bairro) {
+
+    public interface Callback {
+
+        void handle(Bairro bairro);
+    }
+
+    public NovoBairro(Window parent,Callback callback, boolean modal, Bairro  bairro) {
         super((Dialog) parent, modal);
+        this.callback=callback;
         this.bairro=bairro;
         modoAdicao=bairro.getId() == null;
         initComponents();
@@ -298,6 +307,7 @@ public class NovoBairro extends javax.swing.JDialog {
             }
             this.salvo = true;
             //preloader.ocultar();
+            this.callback.handle(bairro);
             JOptionPane.showMessageDialog(this, "Salvo com sucesso");;
             dispose();
     }//GEN-LAST:event_btnSalvarActionPerformed
@@ -396,7 +406,7 @@ public class NovoBairro extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                NovoBairro dialog = new NovoBairro(new javax.swing.JFrame(), true,null);
+                NovoBairro dialog = new NovoBairro(new javax.swing.JFrame(),null, true,null);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

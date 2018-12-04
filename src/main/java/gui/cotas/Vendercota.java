@@ -340,9 +340,9 @@ public class Vendercota extends javax.swing.JInternalFrame {
 
         //agregados=new ArrayList<>();
             Pesquisa.Callback callback =  (pessoatitulo) -> {
-                this.pessoatitulo= (PessoaCota) pessoatitulo;
-                this.edtcliente.setText(pessoatitulo.getNome());
-                this.edtdocumento.setText(pessoatitulo.getCpfCnpj());
+                this.pessoatitular = (PessoaCotaTitular) pessoatitulo;
+              // this.edtcliente.setText(pessoatitulo.getNome());
+                //this.edtdocumento.setText(pessoatitulo.getCpfCnpj());
             };
         Pesquisa pesquisa=new Pesquisa(callback);
         pesquisa.getContentPane().setBackground(Color.WHITE);

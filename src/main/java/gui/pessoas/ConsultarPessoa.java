@@ -174,7 +174,7 @@ public class ConsultarPessoa extends javax.swing.JInternalFrame {
             return;
         }
 
-        novoPessoaForm = new NovaPessoaForm(null, true);
+        novoPessoaForm = new NovaPessoaForm(janelaPrincipal, true);
         novoPessoaForm.setpessoa(pessoaSelecionada);
         novoPessoaForm.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed

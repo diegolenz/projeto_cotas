@@ -154,15 +154,15 @@ public class Pesquisa extends javax.swing.JFrame {
 
     private void btnselecionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselecionarActionPerformed
         // TODO add your handling code here:
-        PessoaCotaDao pdao=new PessoaCotaDao();
+        //PessoaCotaDao pdao=new PessoaCotaDao();
         if (tabela.getSelectedRow() < 0) {
             JOptionPane.showMessageDialog(this , "Nenhuma pessoa selecionada");
             return;
         } else {
             Integer id=(Integer)this.tabela.getValueAt(this.tabela.getSelectedRow(),0);
-            pessoaSelecionada = (PessoaCota) pdao.carregar(id);
+            pessoaSelecionada = (Pessoa) pessoadao.carregar(id);
             callback.handle(pessoaSelecionada);
-            this. dispose();
+            this.dispose();
         }
     }//GEN-LAST:event_btnselecionarActionPerformed
 

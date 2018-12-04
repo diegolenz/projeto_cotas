@@ -8,6 +8,7 @@ package gui.pessoas;
 import gui.enderecos.NovoEndereco;
 import gui.modeltable.TableModelEndereco;
 import gui.modeltable.TableModelPessoa;
+import lib.dao.imp.endereco.endereco.EnderecoDao;
 import lib.dao.imp.pessoa.PessoaDao;
 import lib.model.endereco.Endereco;
 import lib.model.pessoa.Pessoa;
@@ -17,6 +18,8 @@ import util.MascaraMonetaria;
 
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -27,18 +30,19 @@ import java.util.logging.Logger;
  * @author diego.lenz
  */
 public class NovaPessoaForm extends javax.swing.JDialog {
-    private Pessoa pessoa;
+    private Pessoa pessoa=new Pessoa();
     private PessoaDao pessoaDao;
     private List<Endereco> enderecos;
     private TipoPessoa tipoPessoa;
     private TableModelEndereco modeloend;
+    private Endereco endereco;
   //  private List <Pessoa> listPCad= pessoaDao.listar();
 
     /**
      * Creates new form NovaPessoaForm
      */
-    public NovaPessoaForm(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public NovaPessoaForm(javax.swing.JFrame parent, boolean modal) {
+        super( parent, modal);
         initComponents();
     }
 
@@ -57,7 +61,7 @@ public class NovaPessoaForm extends javax.swing.JDialog {
     }
 
     public void carregapessoa() {
-        pessoa = new Pessoa();
+      //  pessoa = new Pessoa();
         pessoa.setNome(this.txtNome.getText());
         pessoa.setCpfCnpj(txtCpf.getText());
         pessoa.setDataNascimento(this.txtDtNasc.getDate());
@@ -396,16 +400,17 @@ public class NovaPessoaForm extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 766, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(14, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(btnenderecos, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(25, 25, 25))))
+                        .addGap(25, 571, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 598, Short.MAX_VALUE))
+                            .addComponent(jScrollPane2))
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -413,8 +418,8 @@ public class NovaPessoaForm extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(btnenderecos))
@@ -426,7 +431,11 @@ public class NovaPessoaForm extends javax.swing.JDialog {
         btnsalvar.setText("adicionar");
         btnsalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsalvarActionPerformed(evt);
+                try {
+                    btnsalvarActionPerformed(evt);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -487,7 +496,9 @@ public class NovaPessoaForm extends javax.swing.JDialog {
     private void btnsalvarActionPerformed(java.awt.event.ActionEvent evt) throws Exception {//GEN-FIRST:event_btnsalvarActionPerformed
         this.carregapessoa();
 
-
+        if (pessoa.getCpfCnpj() == null || pessoa.getCpfCnpj().equals("")) {
+            pessoa.setCpfCnpj(null);
+        }
         if (pessoa.getNome() == null || pessoa.getNome().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "campo nome precisa ser preenchido");
             return;
@@ -496,35 +507,50 @@ public class NovaPessoaForm extends javax.swing.JDialog {
             return;
         } else if (pessoa.getCpfCnpj() != null) {
             pessoaDao = new PessoaDao();
-            if (pessoaDao.getByCpfCnpjExato(pessoa.getCpfCnpj()) != null) {
+            if (pessoaDao.getByCpfCnpjExato(pessoa.getCpfCnpj()).size() != 0) {
                 JOptionPane.showMessageDialog(this, "campo cpf/cnpj ja cadastrado");
+                return;
             }
             if (pessoa.getTipo().equals(TipoPessoa.JURIDICA)) {
                 if (!CpfCnpjValidator.isCnpjValido(pessoa.getCpfCnpj())) {
                     JOptionPane.showMessageDialog(this, "O CNPJ informado não é válido");
                     return;
                 }
-            } else if (pessoa.getTipo().equals(TipoPessoa.FISICA)) {
+            }
+
+
+            else if (pessoa.getTipo().equals(TipoPessoa.FISICA)) {
                 if (!CpfCnpjValidator.isCpfValido(pessoa.getCpfCnpj())) {
+
                     JOptionPane.showMessageDialog(this, "O Cpf informado não é válido");
                     return;
                 }
             }
 
-        } else
-            if (pessoa.getDataNascimento() != null && pessoa.getDataNascimento().after(new Date())) {
+
+        } else if (pessoa.getDataNascimento() != null && pessoa.getDataNascimento().after(new Date())) {
             JOptionPane.showMessageDialog(
                     this,
                     "A data de nascimento não pode ser maior que a data atual"
             );
             return;
-        } else {
-                pessoaDao = new PessoaDao();
-                pessoaDao.Inserir(pessoa);
         }
 
-
-
+        pessoa.setEnderecos(enderecos);
+        EnderecoDao enderecoDao=new EnderecoDao();
+        Endereco end=new Endereco();
+        for ( int i=0; i< enderecos.size(); ) {
+            enderecoDao.Inserir(enderecos.get(i));
+            i=i+1;
+        }
+        try {
+            pessoaDao = new PessoaDao();
+            pessoaDao.Inserir(pessoa);
+            JOptionPane.showMessageDialog(this, "salvo com sucesso");
+            dispose();
+        } catch (Exception ex){
+            JOptionPane.showMessageDialog(this, "falha ao salvar");
+        }
     }//GEN-LAST:event_btnsalvarActionPerformed
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
@@ -534,13 +560,17 @@ public class NovaPessoaForm extends javax.swing.JDialog {
 
     private void btnenderecosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnenderecosActionPerformed
         // TODO add your handling code here:
+        this.endereco=new Endereco();
+        enderecos=new ArrayList<>();
         NovoEndereco.Callback callback = (endereco) -> {
-            endereco.setPessoas(pessoa);
-            enderecos.add(endereco);
+
+            this.endereco=endereco;
+           // this.endereco.setPessoas(pessoa);
+            enderecos.add(this.endereco);
+            modeloend =new TableModelEndereco();
+            modeloend.setList(enderecos.toArray());
+            this.tabelaend.setModel(modeloend);
         };
-        modeloend =new TableModelEndereco();
-        modeloend.setList(enderecos.toArray());
-        this.tabelaend.setModel(modeloend);
         NovoEndereco novoEndereco = new NovoEndereco(this, true, callback);
         novoEndereco.setVisible(true);
     }//GEN-LAST:event_btnenderecosActionPerformed

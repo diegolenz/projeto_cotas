@@ -71,7 +71,7 @@ public  class Pessoa {
 
 
     @Basic(fetch = FetchType.LAZY)
-    @ManyToMany
+    @OneToMany
     private List<Endereco> enderecos;
 
     public List<Endereco> getEnderecos() {

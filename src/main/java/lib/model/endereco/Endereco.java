@@ -16,17 +16,16 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(fetch = FetchType.LAZY)
     private Integer id;
-
+/*
     public Pessoa getPessoas() {
         return pessoa;
     }
 
     public void setPessoas(Pessoa pessoas) {
         this.pessoa = pessoas;
-    }
+    } */
 
-    @ManyToOne
-    protected Pessoa pessoa;
+
     @NotNull
     @ManyToOne
     @Basic(fetch = FetchType.LAZY)
@@ -34,7 +33,6 @@ public class Endereco {
 
     @Basic(fetch = FetchType.LAZY, optional = false)
     @Column(nullable = false, length = 255)
-    @NotEmpty
     @Length(min = 5, max = 255)
     private String logradouro;
 

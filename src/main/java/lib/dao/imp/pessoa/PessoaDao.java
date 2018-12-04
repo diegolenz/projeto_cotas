@@ -10,6 +10,7 @@ import java.util.List;
 public class PessoaDao extends AbstractDao {
     public void Inserir(Object obj) throws Exception {
         super.Inserir(obj);
+
     }
 
     @Override

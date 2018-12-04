@@ -32,7 +32,7 @@ public class AbstractDao<T>   {
         em.getTransaction().begin();
         em.persist(obj);
         em.getTransaction().commit();
-     //   em.close();
+        //em.close();
     }
     public void Alterar( Object obj ) throws Exception {
     }
