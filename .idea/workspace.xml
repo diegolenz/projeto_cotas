@@ -1,212 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cfaee54-01b1-49a6-88f4-a64c82cc6ba5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleCotas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/unknown/binary/jgoodies-looks-2.4.1/SNAPSHOT/jgoodies-looks-2.4.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/pom.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/tb_cidade.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/tb_estado.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/tb_provincia.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCotaIntegrantres.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelPessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelPessoaCota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/swing/DefaultComboBoxModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/handler/AbstractDaoEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/apartamento/ApartamentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/bloco/BlocoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PessoaCotaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PessoaCotaTitularDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/pais/PaisDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/provincia/ProvinciaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/hotel/HotelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/pessoa/PessoaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/apartamento/Apartamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCotaTitular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/Endereco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/bairro/Bairro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/cidade/Cidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/provincia/Provincia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/hotel/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoajuridica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/TipoPessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/CpfCnpjValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/JpaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/MascaraMonetaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/validacao/ValidacaoFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$Callback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelApartamento.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelBloco.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCotaIntegrantres.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelPessoa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelPessoaCota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$Callback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$13.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$Callback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/gui/swing/DefaultComboBoxModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/AbstractDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/handler/AbstractDaoEventHandler$Callback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/handler/AbstractDaoEventHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/apartamento/ApartamentoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/bloco/BlocoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/CotasDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/PessoaCotaDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/PessoaCotaTitularDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/bairro/BairroDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/endereco/EnderecoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/estado/EstadoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/pais/PaisDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/provincia/ProvinciaDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/hotel/HotelDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/pessoa/PessoaDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/apartamento/Apartamento.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/bloco/Bloco.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/cotas/Cota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/cotas/PessoaCota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/cotas/PessoaCotaTitular.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/Endereco.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/bairro/Bairro.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/cidade/Cidade.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/estado/Estado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/pais/Pais.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/provincia/Provincia.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/hotel/Hotel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/pessoa/Pessoa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/pessoa/Pessoajuridica$PessoaJuridica.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/pessoa/Pessoajuridica.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lib/model/pessoa/TipoPessoa.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/util/CpfCnpjValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/util/JpaUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/util/MascaraMonetaria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/util/validacao/ValidacaoFacade$Resultado.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/util/validacao/ValidacaoFacade.class" afterDir="false" />
+    <list default="true" id="3acfd894-7a82-406b-8733-1dff82d3ccdb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -230,88 +26,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConsultarPessoa.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NovoEndereco.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4267">
-              <caret line="569" column="18" selection-start-line="569" selection-start-column="18" selection-end-line="569" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NovoBairro.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="261" column="45" lean-forward="true" selection-start-line="261" selection-start-column="45" selection-end-line="261" selection-end-column="45" />
-              <folding>
-                <element signature="method#setcidade#0;class#NovoBairro#0" />
-                <element signature="method#initComponents#0;class#NovoBairro#0" />
-                <element signature="method#cmbPaisItemStateChanged#0;class#NovoBairro#0" />
-                <element signature="method#cmbProvinciaItemStateChanged#0;class#NovoBairro#0" />
-                <element signature="method#main#0;class#NovoBairro#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cidade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/cidade/Cidade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <element signature="e#1762#1763#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NovaPessoaForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="538" column="36" selection-start-line="538" selection-start-column="36" selection-end-line="538" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5935#5936#0" expanded="true" />
-                <element signature="e#5993#5994#0" expanded="true" />
-                <element signature="e#6289#6290#0" expanded="true" />
-                <element signature="e#6351#6352#0" expanded="true" />
-                <element signature="e#6643#6644#0" expanded="true" />
-                <element signature="e#6707#6708#0" expanded="true" />
-                <element signature="e#7747#7748#0" expanded="true" />
-                <element signature="e#7809#7810#0" expanded="true" />
-                <element signature="e#8185#8186#0" expanded="true" />
-                <element signature="e#8247#8248#0" expanded="true" />
-                <element signature="e#24813#24814#0" expanded="true" />
-                <element signature="e#24877#24878#0" expanded="true" />
-                <element signature="e#25074#25075#0" expanded="true" />
-                <element signature="e#25134#25135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -403,6 +117,22 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ControleCotas" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ControleCotas" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -416,86 +146,19 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="pessoas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="validacao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleCotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleCotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -636,75 +299,103 @@
       <workItem from="1543831635925" duration="27790000" />
       <workItem from="1543917802670" duration="267000" />
     </task>
+    <task id="LOCAL-00001" summary="projeto base">
+      <created>1543918412385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543918412385</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202164000" />
+    <option name="totallyTimeSpent" value="202980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" anchor="right" auto_hide="true" id="Maven Projects" visible="true" weight="0.18155198" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.30683625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29941434" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.1399046" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29941434" />
-      <window_info anchor="right" id="Bean Validation" order="7" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.0031796503" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.30683625" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0031796503" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="5" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.17329094" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.23133236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Bean Validation" order="7" />
-      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.1764706" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.17329094" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,6 +403,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="projeto base" />
+    <option name="LAST_COMMIT_MESSAGE" value="projeto base" />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#1762#1763#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,13 +716,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelEndereco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelEndereco.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/util/validacao/ValidacaoFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
@@ -1039,23 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="538" column="36" selection-start-line="538" selection-start-column="36" selection-end-line="538" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5935#5936#0" expanded="true" />
-            <element signature="e#5993#5994#0" expanded="true" />
-            <element signature="e#6289#6290#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-            <element signature="e#6643#6644#0" expanded="true" />
-            <element signature="e#6707#6708#0" expanded="true" />
-            <element signature="e#7747#7748#0" expanded="true" />
-            <element signature="e#7809#7810#0" expanded="true" />
-            <element signature="e#8185#8186#0" expanded="true" />
-            <element signature="e#8247#8248#0" expanded="true" />
-            <element signature="e#24813#24814#0" expanded="true" />
-            <element signature="e#24877#24878#0" expanded="true" />
-            <element signature="e#25074#25075#0" expanded="true" />
-            <element signature="e#25134#25135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="159" selection-start-line="159" selection-end-line="159" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,9 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4267">
           <caret line="569" column="18" selection-start-line="569" selection-start-column="18" selection-end-line="569" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,13 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="261" column="45" lean-forward="true" selection-start-line="261" selection-start-column="45" selection-end-line="261" selection-end-column="45" />
-          <folding>
-            <element signature="method#setcidade#0;class#NovoBairro#0" />
-            <element signature="method#initComponents#0;class#NovoBairro#0" />
-            <element signature="method#cmbPaisItemStateChanged#0;class#NovoBairro#0" />
-            <element signature="method#cmbProvinciaItemStateChanged#0;class#NovoBairro#0" />
-            <element signature="method#main#0;class#NovoBairro#0" />
-          </folding>
         </state>
       </provider>
     </entry>
