@@ -4,7 +4,6 @@ import javax.swing.table.AbstractTableModel;
 
 
 import lib.model.cotas.Cota;
-import lib.model.cotas.PessoaCota;
 import lib.model.pessoa.Pessoa;
 
 public class TableModelCotaIntegrantres extends AbstractTableModel {
@@ -41,14 +40,13 @@ public class TableModelCotaIntegrantres extends AbstractTableModel {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-	PessoaCota p = (PessoaCota) list[rowIndex];
+	Pessoa p = (Pessoa) list[rowIndex];
 	switch (columnIndex) {
 	case 0:
 		return p.getId();
 	case 1:
 	    return p.getNome();
-        case 2:
-            return p.getTipo_status();
+
 
 	}
 	return "";

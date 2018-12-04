@@ -569,7 +569,7 @@ public class NovoEndereco extends javax.swing.JDialog {
         endereco=new Endereco();
         endereco.setComplemento(this.edtComplemento.getText());
         endereco.setBairro(bairroSelecionado);
-        endereco.setLogradouro("as");
+        endereco.setLogradouro(edtLogradouro.getText());
 
         /*ValidacaoFacade.Resultado resultado = ValidacaoFacade.validar(endereco);
         if (resultado.isValoresInvalidos()) {

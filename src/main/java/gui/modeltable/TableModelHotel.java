@@ -1,8 +1,5 @@
 package gui.modeltable;
 
-import lib.model.cotas.Cota;
-import lib.model.cotas.PessoaCota;
-import lib.model.hotel.Hotel;
 import lib.model.pessoa.Pessoa;
 import lib.model.pessoa.Pessoajuridica;
 

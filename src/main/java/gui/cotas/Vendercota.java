@@ -10,17 +10,14 @@ import gui.modeltable.TableModelCotaIntegrantres;
 import gui.pesquisa.Pesquisa;
 
 import java.awt.*;
-import java.beans.PropertyVetoException;
 import java.util.List;
 import java.util.Vector;
 
-import gui.pesquisa.Pesquisa;
+import gui.pesquisa.Pesquisar;
 import gui.selecionacota.SelecionaCota;
 import lib.dao.imp.cotas.CotasDao;
-import lib.dao.imp.cotas.PessoaCotaDao;
 import lib.dao.imp.pessoa.PessoaDao;
 import lib.model.cotas.Cota;
-import lib.model.cotas.PessoaCota;
 import lib.model.cotas.PessoaCotaTitular;
 import lib.model.pessoa.Pessoa;
 
@@ -35,15 +32,20 @@ public class Vendercota extends javax.swing.JInternalFrame {
     /**
      * Creates new form Vendercota
      */
-    private List<PessoaCota>   pessoastitulo=new Vector<>();
+    private List<Pessoa>   pessoascota=new Vector<>();
     private PessoaCotaTitular pessoatitular;
-    private PessoaCota pessoatitulo;
+    private Pessoa pessoacota;
     private TableModelCotaIntegrantres modelotabela;
     private Cota cota=new Cota();
+    private JFrame tela;
 
     public Vendercota() {
 
         initComponents();
+    }
+
+    public void setaframe(JFrame tela){
+        this.tela=tela;
     }
 
     /**
@@ -72,7 +74,6 @@ public class Vendercota extends javax.swing.JInternalFrame {
         edtcota = new javax.swing.JTextField();
         btncancelar = new javax.swing.JToggleButton();
         btnconfirmar = new javax.swing.JToggleButton();
-        btnaddtitular = new javax.swing.JToggleButton();
         btnaddagregado = new javax.swing.JButton();
         btnremover = new javax.swing.JToggleButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -114,7 +115,7 @@ public class Vendercota extends javax.swing.JInternalFrame {
             }
         });
 
-        btnpesqcliente.setText("pesquisar");
+        btnpesqcliente.setText("selecionar titular");
         btnpesqcliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnpesqclienteActionPerformed(evt);
@@ -130,11 +131,11 @@ public class Vendercota extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setText("Selecione o cliente");
+        jLabel3.setText("Selecione o titular");
 
         jLabel4.setText("Hotel");
 
-        btnpesqcota.setText("pesquisar");
+        btnpesqcota.setText("selecionar cota");
         btnpesqcota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnpesqcotaActionPerformed(evt);
@@ -170,13 +171,6 @@ public class Vendercota extends javax.swing.JInternalFrame {
         btnconfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnconfirmarActionPerformed(evt);
-            }
-        });
-
-        btnaddtitular.setText("Adicionar titular");
-        btnaddtitular.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnaddtitularActionPerformed(evt);
             }
         });
 
@@ -250,23 +244,19 @@ public class Vendercota extends javax.swing.JInternalFrame {
                         .addGap(38, 38, 38))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(btnaddtitular, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(btnaddagregado, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(btncancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(btnconfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btncancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(btnremover, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane2))
+                                        .addComponent(btnconfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnaddagregado, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnremover, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())))
         );
         layout.setVerticalGroup(
@@ -305,12 +295,11 @@ public class Vendercota extends javax.swing.JInternalFrame {
                             .addComponent(edtcota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(edtapartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnpesqcota))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnaddtitular)
                     .addComponent(btnaddagregado)
                     .addComponent(btnremover))
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -336,15 +325,18 @@ public class Vendercota extends javax.swing.JInternalFrame {
 
 
     private void btnpesqclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesqclienteActionPerformed
-        pessoatitulo=new PessoaCota();
-
+        pessoacota=new Pessoa();
+        pessoatitular=new PessoaCotaTitular();
         //agregados=new ArrayList<>();
-            Pesquisa.Callback callback =  (pessoatitulo) -> {
-                this.pessoatitular = (PessoaCotaTitular) pessoatitulo;
-              // this.edtcliente.setText(pessoatitulo.getNome());
-                //this.edtdocumento.setText(pessoatitulo.getCpfCnpj());
+            Pesquisar.Callback callback =  (pessoatitulo) -> {
+                this.pessoatitular.setPessoa(pessoatitulo);
+                if (verrificaagrgado(this.pessoatitular.getPessoa())==true) {
+                    this.pessoatitular.setPessoa(pessoatitulo);
+                    this.edtcliente.setText(pessoatitulo.getNome());
+                    this.edtdocumento.setText(pessoatitulo.getCpfCnpj());
+                }
             };
-        Pesquisa pesquisa=new Pesquisa(callback);
+        Pesquisar pesquisa=new Pesquisar(tela, true,  callback);
         pesquisa.getContentPane().setBackground(Color.WHITE);
         pesquisa.show();
 
@@ -393,68 +385,92 @@ public class Vendercota extends javax.swing.JInternalFrame {
         dispose();
     }//GEN-LAST:event_btncancelarActionPerformed
 
-    public boolean verrificaagrgado(){
-        if (pessoatitulo==null){
-            JOptionPane.showMessageDialog(this , "Selecione uma pessoa");
+    public boolean verrificaagrgado(Pessoa pessoa){
+        if (pessoa==null){
+            JOptionPane.showMessageDialog(null , "Selecione uma pessoa");
             return false;
         }
-        if (pessoastitulo.contains(pessoatitulo)){
-            JOptionPane.showMessageDialog(this , "Pessoa selecionada já esta agregada");
+        if (pessoascota.contains(pessoa)){
+            JOptionPane.showMessageDialog(null , "A pessoa selecionada já esta agregada");
             return false;
         } else
             return true;
     }
 
     private void btnaddagregadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddagregadoActionPerformed
-        // TODO add your handling code here:
-        if (edtcliente.getText()==""){
+        pessoacota=new Pessoa();
+
+        //agregados=new ArrayList<>();
+        Pesquisar.Callback callback =  (pessoatitulo) -> {
+            this.pessoacota=pessoatitulo;
+            if (this.verrificaagrgado(pessoacota)==true) {
+                if (verrificatitular()) {
+                    pessoascota.add(this.pessoacota);
+                    modelotabela = new TableModelCotaIntegrantres();
+                    modelotabela.setList(pessoascota.toArray());
+                    cota.setIntegrantes(pessoascota);
+                    this.tabelaagregadostitulo.setModel(modelotabela);
+                }
+            }
+        };
+        Pesquisar pesquisa=new Pesquisar(tela, true, callback);
+        pesquisa.getContentPane().setBackground(Color.WHITE);
+        pesquisa.show();
+
+
+      /*  if (edtcliente.getText()==""){
             JOptionPane.showMessageDialog(this , "nenhuma pessoa foi selecionada");
         } else {
             if (verrificaagrgado() == true) {
-                pessoatitulo.setTipo_status("integrante");
-                pessoastitulo.add(pessoatitulo);
+               // pessoacota.setTipo_status("integrante");
+                pessoascota.add(pessoacota);
                 modelotabela = new TableModelCotaIntegrantres();
-                modelotabela.setList(pessoastitulo.toArray());
-                cota.setIntegrantes(pessoastitulo);
+                modelotabela.setList(pessoascota.toArray());
+                cota.setIntegrantes(pessoascota);
                 this.tabelaagregadostitulo.setModel(modelotabela);
             }
-        }
+        } */
 
 
     }//GEN-LAST:event_btnaddagregadoActionPerformed
 
     public boolean verrificatitular(){
-        if (cota.getTitular()==null){
+        if (pessoatitular==null){
             return true;
         }
-        if (pessoatitular.getNome()==cota.getTitular().getNome() && (pessoatitular.getCpfCnpj()==cota.getTitular().getCpfCnpj())) {
+        if  (pessoacota==pessoatitular.getPessoa()){
+            JOptionPane.showMessageDialog(this , "A pessoa selecionada é o titular do titulo");
+            return false;
+
+        } else  if (pessoatitular.getPessoa().getNome()==cota.getTitular().getPessoa().getNome()
+                && (pessoatitular.getPessoa().getCpfCnpj()==cota.getTitular().getPessoa().getCpfCnpj())) {
             JOptionPane.showMessageDialog(this , "A pessoa selecionada já é o titular do titulo");
             return false;
-        } else if (cota.getTitular()!= null){
+            /*else if (cota.getTitular()!= null){
             JOptionPane.showMessageDialog(this , "O titulo já possui um titular");
-            return false;
+            return false; */
         } else
             return true;
     }
 
     private void btnaddtitularActionPerformed(java.awt.event.ActionEvent evt) {                                              
         // TODO add your handling code here:
-        pessoatitular=new PessoaCotaTitular();
-        pessoatitular.setNome(pessoatitulo.getNome());
-        pessoatitular.setCpfCnpj(pessoatitulo.getCpfCnpj());
-        pessoatitulo.setTipo_status("Titular");
+     /*   pessoatitular=new PessoaCotaTitular();
+        pessoatitular.getPessoa().setNome(pessoacota.getNome());
+        pessoatitular.getPessoa().setCpfCnpj(pessoacota.getCpfCnpj());
+        //pessoacota.setTipo_status("Titular");
         //cetar todas as informações
         if (edtcliente.getText()==""){
             JOptionPane.showMessageDialog(this , "nenhuma pessoa foi selecionada");
         } else {
             if (verrificatitular() == true) {
-                pessoastitulo.add(pessoatitulo);
+                pessoascota.add(pessoacota);
                 modelotabela = new TableModelCotaIntegrantres();
-                modelotabela.setList(pessoastitulo.toArray());
+                modelotabela.setList(pessoascota.toArray());
                 cota.setTitular(pessoatitular);
                 this.tabelaagregadostitulo.setModel(modelotabela);
             }
-        }
+        } */
     }
 
     private void btnremoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnremoverActionPerformed
@@ -463,21 +479,21 @@ public class Vendercota extends javax.swing.JInternalFrame {
             return;
         } else {
             Integer id = (Integer) this.tabelaagregadostitulo.getValueAt(this.tabelaagregadostitulo.getSelectedRow(), 0);
-            pessoatitulo = new PessoaCota();
-            PessoaCotaDao PCotaDao = new PessoaCotaDao();
-            pessoatitulo = (PessoaCota) PCotaDao.carregar(id);
-            if ((cota.getTitular() != null)&&(pessoatitulo.getNome() == cota.getTitular().getNome())
-                        && (pessoatitulo.getCpfCnpj() == cota.getTitular().getCpfCnpj())) {
+            pessoacota = new Pessoa();
+            PessoaDao PDao = new PessoaDao();
+            pessoacota = (Pessoa) PDao.carregar(id);
+            if ((cota.getTitular() != null)&&(pessoacota.getNome() == cota.getTitular().getPessoa().getNome())
+                        && (pessoacota.getCpfCnpj() == cota.getTitular().getPessoa().getCpfCnpj())) {
                     if (JOptionPane.showConfirmDialog(this, "A pessoa selecionada é o titular da cota. Deseja realmente excluir?", title, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
                         cota.setTitular(null);
-                        pessoastitulo.remove(pessoatitulo);
-                        modelotabela.setList(pessoastitulo.toArray());
+                        pessoascota.remove(pessoacota);
+                        modelotabela.setList(pessoascota.toArray());
 
                     }
 
                 } else {
-                    pessoastitulo.remove(pessoatitulo);
-                    modelotabela.setList(pessoastitulo.toArray());
+                    pessoascota.remove(pessoacota);
+                    modelotabela.setList(pessoascota.toArray());
                 }
             }
     }//GEN-LAST:event_btnremoverActionPerformed
@@ -485,7 +501,6 @@ public class Vendercota extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnaddagregado;
-    private javax.swing.JToggleButton btnaddtitular;
     private javax.swing.JToggleButton btncancelar;
     private javax.swing.JToggleButton btnconfirmar;
     private javax.swing.JButton btnpesqcliente;

@@ -138,6 +138,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         Vendercota obj=new Vendercota();
         obj.setVisible(true);
         obj.setSize(this.jDesktopPane1.getSize());
+        obj.setaframe(this); //metodo para setar o jframe principal pra abrir os j dialog dentro do mesmo
         this.jDesktopPane1.add(obj);
         //NovaPessoaForm novaPessoaForm=new NovaPessoaForm(this, true);
         //novaPessoaForm.setVisible(true);

@@ -1,6 +1,5 @@
 package gui.modeltable;
 
-import lib.model.cotas.PessoaCota;
 import lib.model.pessoa.Pessoa;
 
 import javax.swing.table.AbstractTableModel;

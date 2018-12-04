@@ -20,7 +20,7 @@ public class Cota {
     @ManyToOne
     protected PessoaCotaTitular titular;
     @ManyToMany(mappedBy="cotas")
-    protected List<PessoaCota> integrantes;
+    protected List<Pessoa> integrantes;
     @ManyToOne
     protected Apartamento apartamento;
     protected Integer numero;
@@ -50,11 +50,11 @@ public class Cota {
     }
 
 
-    public List<PessoaCota> getIntegrantes() {
+    public List<Pessoa> getIntegrantes() {
         return integrantes;
     }
 
-    public void setIntegrantes(List<PessoaCota> integrantes) {
+    public void setIntegrantes(List<Pessoa> integrantes) {
         this.integrantes = integrantes;
     }
 

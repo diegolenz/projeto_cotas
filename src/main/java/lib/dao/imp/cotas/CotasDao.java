@@ -3,7 +3,6 @@ package lib.dao.imp.cotas;
 import lib.dao.AbstractDao;
 import lib.model.apartamento.Apartamento;
 import lib.model.cotas.Cota;
-import lib.model.cotas.PessoaCota;
 import org.hibernate.HibernateException;
 
 import java.util.List;

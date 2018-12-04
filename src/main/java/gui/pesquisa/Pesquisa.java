@@ -5,15 +5,9 @@
  */
 package gui.pesquisa;
 
-import gui.cotas.Vendercota;
-import gui.modeltable.TableModelCotaIntegrantres;
 import gui.modeltable.TableModelPessoa;
-import javafx.collections.ObservableList;
-import lib.dao.imp.cotas.PessoaCotaDao;
 import lib.dao.imp.pessoa.PessoaDao;
-import lib.model.cotas.PessoaCota;
 import lib.model.pessoa.Pessoa;
-import org.hibernate.type.IntegerType;
 //import sun.plugin2.jvm.RemoteJVMLauncher;
 
 import javax.swing.*;

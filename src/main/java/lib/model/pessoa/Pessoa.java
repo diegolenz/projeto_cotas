@@ -74,6 +74,12 @@ public  class Pessoa {
     @OneToMany
     private List<Endereco> enderecos;
 
+    @ManyToMany
+    @JoinTable(name="pessoacota_cota", joinColumns=
+            {@JoinColumn(name="pessoa_id")}, inverseJoinColumns=
+            {@JoinColumn(name="cota_id")})
+    protected List<Cota> cotas;
+
     public List<Endereco> getEnderecos() {
         return enderecos;
     }
