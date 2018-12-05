@@ -352,7 +352,7 @@ public class Vendercota extends javax.swing.JInternalFrame {
         SelecionaCota.Callback callback =  (cota) -> {
             this.cota= (Cota) cota;
             this.edthotel.setText(cota.getApartamento().getBloco().getHotel().getNome());
-            this.edtbloco.setText(String.valueOf(cota.getApartamento().getBloco().getNumero()));
+            this.edtbloco.setText((cota.getApartamento().getBloco().getDescricao()));
             this.edtapartamento.setText(String.valueOf(cota.getApartamento().getNumero()));
             this.edtcota.setText(String.valueOf(cota.getNumero()));
 

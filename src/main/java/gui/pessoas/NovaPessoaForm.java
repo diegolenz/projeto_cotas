@@ -431,7 +431,11 @@ public class NovaPessoaForm extends javax.swing.JDialog {
         btnsalvar.setText("adicionar");
         btnsalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsalvarActionPerformed(evt);
+                try {
+                    btnsalvarActionPerformed(evt);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 

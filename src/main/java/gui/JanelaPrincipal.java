@@ -6,6 +6,7 @@
 package gui;
 
 import gui.cotas.Vendercota;
+import gui.hotel.ConsultaHoteis;
 import gui.pessoas.ConsultarPessoa;
 import gui.pessoas.ConsultarPessoas;
 import gui.pessoas.NovaPessoaForm;
@@ -35,6 +36,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu3 = new javax.swing.JMenu();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -43,6 +45,10 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jmnucadpessoa = new javax.swing.JMenuItem();
+        mnuhotel = new javax.swing.JMenu();
+        submnuconshotel = new javax.swing.JMenuItem();
+
+        jMenu3.setText("jMenu3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,6 +106,18 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
+        mnuhotel.setText("hoteis");
+
+        submnuconshotel.setText("consultar hotel");
+        submnuconshotel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submnuconshotelActionPerformed(evt);
+            }
+        });
+        mnuhotel.add(submnuconshotel);
+
+        jMenuBar1.add(mnuhotel);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -145,6 +163,15 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jmnuvendercotaActionPerformed
 
+    private void submnuconshotelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submnuconshotelActionPerformed
+        // TODO add your handling code here:
+        ConsultaHoteis obj =new ConsultaHoteis();
+        obj.setVisible(true);
+        obj.setSize(this.jDesktopPane1.getSize());
+      //  obj.setaframe(this); //metodo para setar o jframe principal pra abrir os j dialog dentro do mesmo
+        this.jDesktopPane1.add(obj);
+    }//GEN-LAST:event_submnuconshotelActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -184,10 +211,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jmnucadpessoa;
     private javax.swing.JMenuItem jmnuconsultacota;
     private javax.swing.JMenuItem jmnuvendercota;
+    private javax.swing.JMenu mnuhotel;
+    private javax.swing.JMenuItem submnuconshotel;
     // End of variables declaration//GEN-END:variables
 }

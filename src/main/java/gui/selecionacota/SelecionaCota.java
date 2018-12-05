@@ -513,7 +513,7 @@ public class SelecionaCota extends javax.swing.JDialog {
         if (this.tabelabloco.getSelectedRow() >= 0) {
             Integer id = (Integer) this.tabelabloco.getValueAt(this.tabelabloco.getSelectedRow(), 0);
             blocoselecionado= (Bloco) blocodao.carregar(id);
-            edtdescricaoapartamento.setText(String.valueOf(blocoselecionado.getNumero()));
+            edtdescricaoapartamento.setText(blocoselecionado.getDescricao());
             this.tabelaHotel.setSelectedIndex(2);
 
         } else JOptionPane.showMessageDialog(this, "Selecione um bloco para prosseguir");

@@ -42,7 +42,7 @@ public class TableModelBloco extends AbstractTableModel {
             case 0:
                 return obj.getId();
             case 1:
-                return obj.getNumero();
+                return obj.getDescricao();
             case 3:
                 return obj.getHotel().getNome();
 
