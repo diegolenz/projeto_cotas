@@ -22,7 +22,7 @@ public class CadastroBloco extends javax.swing.JDialog {
 
 
     private Bloco bloco=new Bloco();
-    private final Callback callback;
+    private final Callback callback;//teste
     private DefaultComboBoxModel cmbhotelmodel;
 
 
