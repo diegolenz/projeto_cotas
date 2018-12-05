@@ -217,7 +217,7 @@ public class NovaPessoaForm extends javax.swing.JDialog {
 
         lblDataNasc.setText("Data de nascimento");
 
-        txtSalario.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0,00"))));
+        txtSalario.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
         txtSalario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSalarioActionPerformed(evt);
@@ -431,11 +431,7 @@ public class NovaPessoaForm extends javax.swing.JDialog {
         btnsalvar.setText("adicionar");
         btnsalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-                    btnsalvarActionPerformed(evt);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                btnsalvarActionPerformed(evt);
             }
         });
 
