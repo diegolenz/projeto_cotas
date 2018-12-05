@@ -40,6 +40,7 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
         btnvisualizar = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
+        setBorder(null);
         setClosable(true);
 
         btnpesquisar.setText("pesquisar");
@@ -102,7 +103,7 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(edtpesquisar, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE)
+                        .addComponent(edtpesquisar, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnpesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -121,7 +122,7 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
                             .addComponent(edtpesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)))
                 .addGap(30, 30, 30))
         );
 

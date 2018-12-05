@@ -5,20 +5,52 @@
  */
 package gui.hotel.apartamento;
 
+import gui.swing.DefaultComboBoxModel;
+import lib.model.apartamento.Apartamento;
+import lib.model.bloco.Bloco;
+import lib.model.hotel.Hotel;
+
+import javax.swing.*;
+import java.util.List;
+
 /**
  *
  * @author diego.lenz
  */
 public class CadastroApartamento extends javax.swing.JDialog {
 
-    /**
-     * Creates new form CadastroApartamento
-     */
-    public CadastroApartamento(java.awt.Frame parent, boolean modal) {
+    private DefaultComboBoxModel cmbblocolmodel=new DefaultComboBoxModel();
+    private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
+    private Apartamento apartamento=new Apartamento();
+    private final Callback callback;
+    private List<Bloco> blocos;
+
+
+    public interface Callback {
+
+        void handle(Apartamento apartamento);
+    }
+
+    public void setapartamento(Apartamento ap){
+        this.apartamento=ap;
+        this.edtdesc.setText(Integer.toString(apartamento.getNumero()));
+    }
+
+    public CadastroApartamento(java.awt.Frame parent, boolean modal, Callback callback) {
         super(parent, modal);
+        this.callback=callback;
         initComponents();
     }
 
+    public void setabloco_hotel(Hotel hotel, List<Bloco> blocos){
+        this.cmbhotelmodel.addElement(hotel);
+        this.edthotel.setText(hotel.getNome());
+        for (Bloco b: blocos){
+            cmbblocolmodel.addElement(b.getDescricao());
+        }
+        this.cmbbloco.setModel(cmbblocolmodel);
+        this.blocos=blocos;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,11 +66,12 @@ public class CadastroApartamento extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         cmbbloco = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        edtdesc = new javax.swing.JTextField();
+        edtdesc = new javax.swing.JFormattedTextField();
         btnsalvar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -49,6 +82,8 @@ public class CadastroApartamento extends javax.swing.JDialog {
         jLabel2.setText("apartamento");
 
         jLabel3.setText("descricao");
+
+        edtdesc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#000"))));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -81,14 +116,19 @@ public class CadastroApartamento extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(cmbbloco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel3)
                     .addComponent(edtdesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         btnsalvar.setText("salvar");
+        btnsalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalvarActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("cadastro de apartamentos");
@@ -121,7 +161,32 @@ public class CadastroApartamento extends javax.swing.JDialog {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnsalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalvarActionPerformed
+        // TODO add your handling code here:
+        if (edtdesc.getText()=="" ) {
+            JOptionPane.showMessageDialog(this, "numero do apartamento invlido");
+            return;
+        } else {
+            apartamento.setNumero(Integer.parseInt(edtdesc.getText()));
+        }
+        if (cmbbloco.getSelectedItem()==null){
+            JOptionPane.showMessageDialog(this, "selecione um apartamento");
+            return;
+        }
+        for (Bloco b:blocos){
+            if (b.getDescricao()==cmbbloco.getSelectedItem()){
+                apartamento.setBloco(b);
+            }
+        }
+
+        callback.handle(apartamento);
+        dispose();
+
+
+    }//GEN-LAST:event_btnsalvarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -153,7 +218,7 @@ public class CadastroApartamento extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                CadastroApartamento dialog = new CadastroApartamento(new javax.swing.JFrame(), true);
+                CadastroApartamento dialog = new CadastroApartamento(new javax.swing.JFrame(), true,null);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -168,7 +233,7 @@ public class CadastroApartamento extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnsalvar;
     private javax.swing.JComboBox<String> cmbbloco;
-    private javax.swing.JTextField edtdesc;
+    private javax.swing.JFormattedTextField edtdesc;
     private javax.swing.JTextField edthotel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

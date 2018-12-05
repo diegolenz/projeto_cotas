@@ -32,7 +32,7 @@ public class TableModelBloco extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 6;
+        return 3;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class TableModelBloco extends AbstractTableModel {
                 return obj.getId();
             case 1:
                 return obj.getDescricao();
-            case 3:
+            case 2:
                 return obj.getHotel().getNome();
 
         }
@@ -56,9 +56,9 @@ public class TableModelBloco extends AbstractTableModel {
             case 0:
                 return "id";
             case 1:
-                return "numero";
-            case 2:
                 return "descricao";
+            case 2:
+                return "hotel";
 
 
         }

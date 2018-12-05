@@ -46,6 +46,7 @@ public class TableModelApartamento extends AbstractTableModel {
             case 1:
                 return p.getNumero();
             case 2:
+                return p.getBloco().getDescricao();
 
         }
         return "";
@@ -57,7 +58,9 @@ public class TableModelApartamento extends AbstractTableModel {
             case 0:
                 return "codigo";
             case 1:
-                return "numerodo ap";
+                return "numero do apartamento";
+            case 2:
+                return "bloco";
         }
         return "";
     }

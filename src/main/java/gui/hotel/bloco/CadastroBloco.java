@@ -23,7 +23,7 @@ public class CadastroBloco extends javax.swing.JDialog {
 
     private Bloco bloco=new Bloco();
     private final Callback callback;
-    private DefaultComboBoxModel cmbhotelmodel;
+    private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
 
 
     /**
@@ -34,10 +34,16 @@ public class CadastroBloco extends javax.swing.JDialog {
         this.callback = callback;
         initComponents();
     }
+    public void setbloco(Bloco bloco){
+        this.bloco=bloco;
+        cmbhotelmodel.addElement(this.bloco.getHotel().getNome());
+        cmbhotel.setModel(cmbhotelmodel);
+        edtdesc.setText(this.bloco.getDescricao());
+    }
+
     public void sethotel(Hotel hotel){
         if (hotel !=null) {
             bloco.setHotel(hotel);
-            cmbhotelmodel = new DefaultComboBoxModel();
             cmbhotelmodel.addElement(hotel.getNome());
             cmbhotel.setModel(cmbhotelmodel);
         }
@@ -151,9 +157,9 @@ public class CadastroBloco extends javax.swing.JDialog {
 
     private void btnsalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalvarActionPerformed
         // TODO add your handling code here:
-        bloco=new Bloco();
         bloco.setDescricao(this.edtdesc.getText());
         callback.handle(bloco);
+        dispose();
         
     }//GEN-LAST:event_btnsalvarActionPerformed
 

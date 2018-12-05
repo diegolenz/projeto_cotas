@@ -6,7 +6,10 @@
 package gui.cotas;
 
 import gui.modeltable.TableModelBloco;
+import gui.swing.DefaultComboBoxModel;
+import lib.model.apartamento.Apartamento;
 import lib.model.bloco.Bloco;
+import lib.model.hotel.Hotel;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
@@ -20,9 +23,19 @@ public class cadastroCota extends javax.swing.JDialog {
     /**
      * Creates new form cadastroCota
      */
+    private DefaultComboBoxModel cmbblocolmodel=new DefaultComboBoxModel();
+    private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
+    private DefaultComboBoxModel cmbapartamentomodel=new DefaultComboBoxModel();
 
-
-
+    public void setobj(Hotel hotel, List<Bloco> blocos, List<Apartamento> apartamentos){
+       /* this.cmbhotelmodel.addElement(hotel);
+        this.edt.setText(hotel.getNome());
+        for (Bloco b: blocos){
+            cmbblocolmodel.addElement(b.getDescricao());
+        }
+        this.cmbbloco.setModel(cmbblocolmodel);
+        this.blocos=blocos; */
+    }
 
     public cadastroCota(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

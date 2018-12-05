@@ -6,8 +6,12 @@
 package gui.hotel;
 
 import gui.cotas.cadastroCota;
+import gui.hotel.apartamento.CadastroApartamento;
 import gui.hotel.bloco.*;
+import gui.modeltable.TableModelApartamento;
 import gui.modeltable.TableModelBloco;
+import lib.dao.imp.bloco.BlocoDao;
+import lib.model.apartamento.Apartamento;
 import lib.model.bloco.Bloco;
 import lib.model.hotel.Hotel;
 
@@ -26,8 +30,11 @@ public class CadastraHotel extends javax.swing.JDialog {
      */
     private Hotel hotel;
     private Bloco bloco=new Bloco();
+    private Apartamento apartamento=new Apartamento();
+    private List<Apartamento> apartamentos=new ArrayList<>();
     private List<Bloco> blocos=new ArrayList<>();
     private TableModelBloco tableModelBloco=new TableModelBloco();
+    private TableModelApartamento tableModelApartamento=new TableModelApartamento();
 
 
     public CadastraHotel(java.awt.Frame parent, boolean modal) {
@@ -70,9 +77,9 @@ public class CadastraHotel extends javax.swing.JDialog {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jtblapartamento = new javax.swing.JTable();
-        btnnovobloco1 = new javax.swing.JButton();
-        btnrmvbloco1 = new javax.swing.JButton();
-        btnaltbloco1 = new javax.swing.JButton();
+        btnnovoApa = new javax.swing.JButton();
+        btnrmvApa = new javax.swing.JButton();
+        btnaltApa = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         pnlcota = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -206,11 +213,11 @@ public class CadastraHotel extends javax.swing.JDialog {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnnvenderecos, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26)
-                                .addComponent(btnrmvend, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnnvenderecos)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnaltend, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnrmvend)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnaltend)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -281,11 +288,11 @@ public class CadastraHotel extends javax.swing.JDialog {
                     .addGroup(jpnlLayout.createSequentialGroup()
                         .addGroup(jpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jpnlLayout.createSequentialGroup()
-                                .addComponent(btnnovobloco, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnnovobloco)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnrmvbloco, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnrmvbloco)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnaltbloco, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnaltbloco)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE))
                         .addContainerGap())))
@@ -294,13 +301,14 @@ public class CadastraHotel extends javax.swing.JDialog {
             jpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
-                .addGap(63, 63, 63)
-                .addGroup(jpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnnovobloco)
-                    .addComponent(btnrmvbloco)
-                    .addComponent(btnaltbloco))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addGroup(jpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnrmvbloco, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jpnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnaltbloco)
+                        .addComponent(btnnovobloco)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -319,24 +327,24 @@ public class CadastraHotel extends javax.swing.JDialog {
         ));
         jScrollPane3.setViewportView(jtblapartamento);
 
-        btnnovobloco1.setText("adicionar");
-        btnnovobloco1.addActionListener(new java.awt.event.ActionListener() {
+        btnnovoApa.setText("adicionar");
+        btnnovoApa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnnovobloco1ActionPerformed(evt);
+                btnnovoApaActionPerformed(evt);
             }
         });
 
-        btnrmvbloco1.setText("remover");
-        btnrmvbloco1.addActionListener(new java.awt.event.ActionListener() {
+        btnrmvApa.setText("remover");
+        btnrmvApa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnrmvbloco1ActionPerformed(evt);
+                btnrmvApaActionPerformed(evt);
             }
         });
 
-        btnaltbloco1.setText("alterar");
-        btnaltbloco1.addActionListener(new java.awt.event.ActionListener() {
+        btnaltApa.setText("alterar");
+        btnaltApa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnaltbloco1ActionPerformed(evt);
+                btnaltApaActionPerformed(evt);
             }
         });
 
@@ -355,11 +363,11 @@ public class CadastraHotel extends javax.swing.JDialog {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(btnnovobloco1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnnovoApa, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnrmvbloco1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnrmvApa, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(btnaltbloco1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnaltApa, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel4))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
@@ -370,9 +378,9 @@ public class CadastraHotel extends javax.swing.JDialog {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnaltbloco1)
-                    .addComponent(btnrmvbloco1)
-                    .addComponent(btnnovobloco1))
+                    .addComponent(btnaltApa)
+                    .addComponent(btnrmvApa)
+                    .addComponent(btnnovoApa))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -526,7 +534,7 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnrmvendActionPerformed
 
     private void btnaltendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaltendActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_btnaltendActionPerformed
 
     private void btnnovoblocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovoblocoActionPerformed
@@ -547,29 +555,82 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnnovoblocoActionPerformed
 
     private void btnrmvblocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrmvblocoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnrmvblocoActionPerformed
+        if (this.tabelabloco.getSelectedRow() < 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum bloco selecionado");
+            return;
+        } else {
+            bloco = new Bloco();
+            bloco = blocos.get(tabelabloco.getSelectedRow());
+            blocos.remove(bloco);
+            this.tabelabloco.setModel(tableModelBloco);
+        }
+        }//GEN-LAST:event_btnrmvblocoActionPerformed
 
     private void btnaltblocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaltblocoActionPerformed
         // TODO add your handling code here:
+        if (this.tabelabloco.getSelectedRow() < 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum bloco selecionado");
+            return;
+        } else {
+            bloco=new Bloco();
+            bloco=blocos.get(tabelabloco.getSelectedRow());
+            CadastroBloco.Callback callback = (bloco) -> {
+                this.bloco = bloco;
+                tableModelBloco.setList(blocos.toArray());
+                this.tabelabloco.setModel(tableModelBloco);
+            };
+            CadastroBloco obj = new CadastroBloco(null, true, callback);
+            obj.setbloco(bloco);
+            obj.setVisible(true);
+        }
     }//GEN-LAST:event_btnaltblocoActionPerformed
 
-    private void btnnovobloco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovobloco1ActionPerformed
+    private void btnnovoApaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovoApaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnnovobloco1ActionPerformed
+        if (bloco == null){
+            JOptionPane.showMessageDialog(this, "cadastre ao menos um bloco para poder cadastrar um apartamento.");
+        } else {
+                CadastroApartamento.Callback callback = (apartamento) -> {
+                this.apartamento = apartamento;
+                apartamentos.add(this.apartamento);
+                tableModelApartamento.setList(apartamentos.toArray());
+                this.jtblapartamento.setModel(tableModelApartamento);
+            };
+            CadastroApartamento obj = new CadastroApartamento(null, true, callback);
+            obj.setabloco_hotel(hotel, blocos);
+            obj.setVisible(true);
+        }
+    }//GEN-LAST:event_btnnovoApaActionPerformed
 
-    private void btnrmvbloco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrmvbloco1ActionPerformed
+    private void btnrmvApaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrmvApaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnrmvbloco1ActionPerformed
 
-    private void btnaltbloco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaltbloco1ActionPerformed
+    }//GEN-LAST:event_btnrmvApaActionPerformed
+
+    private void btnaltApaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaltApaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnaltbloco1ActionPerformed
+        if (this.jtblapartamento.getSelectedRow() < 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum apartamento selecionado");
+            return;
+        } else {
+            apartamento=new Apartamento();
+            apartamento=apartamentos.get(jtblapartamento.getSelectedRow());
+            CadastroApartamento.Callback callback = (apartamento) -> {
+                this.apartamento = apartamento;
+                tableModelApartamento.setList(apartamentos.toArray());
+                this.jtblapartamento.setModel(tableModelApartamento);
+            };
+            CadastroApartamento obj = new CadastroApartamento(null, true, callback);
+            obj.setabloco_hotel(hotel, blocos);
+            obj.setapartamento(apartamento);
+            obj.setVisible(true);
+        }
+    }//GEN-LAST:event_btnaltApaActionPerformed
 
     private void btnnvcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnvcotaActionPerformed
         // TODO add your handling code here:
         cadastroCota cadastroCota=new cadastroCota(null, true);
-        cadastroCota.show();
+        cadastroCota.setobj(hotel, blocos, apartamentos);
         cadastroCota.setVisible(true);
     }//GEN-LAST:event_btnnvcotaActionPerformed
 
@@ -633,17 +694,17 @@ public class CadastraHotel extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnaltApa;
     private javax.swing.JButton btnaltbloco;
-    private javax.swing.JButton btnaltbloco1;
     private javax.swing.JButton btnaltcota;
     private javax.swing.JButton btnaltend;
     private javax.swing.JButton btncanccad;
+    private javax.swing.JButton btnnovoApa;
     private javax.swing.JButton btnnovobloco;
-    private javax.swing.JButton btnnovobloco1;
     private javax.swing.JButton btnnvcota;
     private javax.swing.JButton btnnvenderecos;
+    private javax.swing.JButton btnrmvApa;
     private javax.swing.JButton btnrmvbloco;
-    private javax.swing.JButton btnrmvbloco1;
     private javax.swing.JButton btnrmvcota;
     private javax.swing.JButton btnrmvend;
     private javax.swing.JButton btnsalvarhotel;
