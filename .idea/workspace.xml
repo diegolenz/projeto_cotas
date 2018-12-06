@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3acfd894-7a82-406b-8733-1dff82d3ccdb" name="Default" comment="" />
+    <list default="true" id="3acfd894-7a82-406b-8733-1dff82d3ccdb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,87 +48,150 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConsultaModeloCota.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java">
+      <file leaf-file-name="ConsultarCotas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/ConsultarCotas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="133" column="29" lean-forward="true" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Periodo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="357">
+              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#1564#1565#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#2160#2161#0" expanded="true" />
+                <element signature="e#2219#2220#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModeloPeriodo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+      <file leaf-file-name="cadastroCota.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="562">
+              <caret line="367" column="51" lean-forward="true" selection-start-line="367" selection-start-column="51" selection-end-line="367" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#4257#4258#0" expanded="true" />
+                <element signature="e#4317#4318#0" expanded="true" />
+                <element signature="e#4474#4475#0" expanded="true" />
+                <element signature="e#4531#4532#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4751#4752#0" expanded="true" />
+                <element signature="e#5095#5096#0" expanded="true" />
+                <element signature="e#5158#5159#0" expanded="true" />
+                <element signature="e#6044#6045#0" expanded="true" />
+                <element signature="e#6106#6107#0" expanded="true" />
+                <element signature="e#6323#6324#0" expanded="true" />
+                <element signature="e#6389#6390#0" expanded="true" />
+                <element signature="e#6681#6682#0" expanded="true" />
+                <element signature="e#6746#6747#0" expanded="true" />
+                <element signature="e#6947#6948#0" expanded="true" />
+                <element signature="e#7008#7009#0" expanded="true" />
+                <element signature="e#7212#7213#0" expanded="true" />
+                <element signature="e#7276#7277#0" expanded="true" />
+                <element signature="e#20706#22782#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cota.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
+      <file leaf-file-name="CadastroApartamento.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeriodoCotaDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="179" column="28" selection-start-line="179" selection-start-column="28" selection-end-line="179" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#CadastroApartamento#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadastroModeloCota.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java">
+      <file leaf-file-name="JanelaPrincipal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state relative-caret-position="163">
+              <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#CadastroModeloCota#0" />
+                <element signature="e#988#1077#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#2828#2829#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableModelperiodo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelperiodo.java">
+      <file leaf-file-name="CadastraHotel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="952">
+              <caret line="587" lean-forward="true" selection-start-line="587" selection-end-line="587" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1512#1601#0" expanded="true" />
+                <element signature="e#1263#22470#0" />
+                <element signature="e#4200#4201#0" expanded="true" />
+                <element signature="e#4258#4259#0" expanded="true" />
+                <element signature="e#4581#4582#0" expanded="true" />
+                <element signature="e#4650#4651#0" expanded="true" />
+                <element signature="e#9123#9124#0" expanded="true" />
+                <element signature="e#9189#9190#0" expanded="true" />
+                <element signature="e#9388#9389#0" expanded="true" />
+                <element signature="e#9449#9450#0" expanded="true" />
+                <element signature="e#9934#9935#0" expanded="true" />
+                <element signature="e#9995#9996#0" expanded="true" />
+                <element signature="e#12998#12999#0" expanded="true" />
+                <element signature="e#13062#13063#0" expanded="true" />
+                <element signature="e#13265#13266#0" expanded="true" />
+                <element signature="e#13328#13329#0" expanded="true" />
+                <element signature="e#13531#13532#0" expanded="true" />
+                <element signature="e#13594#13595#0" expanded="true" />
+                <element signature="e#16703#16704#0" expanded="true" />
+                <element signature="e#16765#16766#0" expanded="true" />
+                <element signature="e#16964#16965#0" expanded="true" />
+                <element signature="e#17025#17026#0" expanded="true" />
+                <element signature="e#17224#17225#0" expanded="true" />
+                <element signature="e#17285#17286#0" expanded="true" />
+                <element signature="e#23896#23941#0" />
+                <element signature="e#24635#25167#0" />
+                <element signature="e#25173#26021#0" />
+                <element signature="e#25246#25290#0" />
+                <element signature="e#26027#26904#0" />
+                <element signature="e#26099#26142#0" />
+                <element signature="e#26910#27487#0" />
+                <element signature="e#27493#28491#0" />
+                <element signature="e#28679#29051#0" />
+                <element signature="e#29057#31139#0" />
+                <element signature="e#29211#29298#0" expanded="true" />
+                <element signature="e#30840#31064#0" expanded="true" />
+                <element signature="e#31063#31064#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bloco.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,11 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/Pais.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estados.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/enderecos/Endereco.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/pais/PaisDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/provincia/ProvinciaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java" />
@@ -171,29 +250,34 @@
         <option value="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCotaIntegrantres.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCotaTitular.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/PeriodoCota.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelperiodo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/PesquisaModelo.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelModeloPeriodo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/PesquisarModelo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/ConsultarCotas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" />
       </list>
     </option>
   </component>
@@ -276,15 +360,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="modeltable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,7 +369,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
@@ -304,7 +379,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="cotas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="bloco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
@@ -331,7 +415,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="pri&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/JanelaPrincipal.java&#10;novoe&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/enderecos/NovoEndereco.java&#10;pessoa&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;cota&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/cotas/Cota.java&#10;pessoa.ja&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;endere&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/endereco/Endereco.java&#10;dao&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java&#10;consu&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/pessoas/ConsultarPessoa.java&#10;abstra&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;enderecoda&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java&#10;abstr&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;bairro&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java&#10;est&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/estado/Estado.java&#10;pais&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/pais/Pais.java&#10;cidade&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/cidade/Cidade.java&#10;novape&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/pessoas/NovaPessoaForm.java&#10;BlocoDa&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/bloco/BlocoDao.java&#10;tab&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/modeltable/TableModelCliente.java" />
+    <property name="SearchEverywhereHistoryKey" value="cadastroapa&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/hotel/apartamento/CadastroApartamento.java&#10;prin&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/JanelaPrincipal.java&#10;pesquisar&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/pesquisa/Pesquisar.java&#10;pri&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/JanelaPrincipal.java&#10;novoe&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/enderecos/NovoEndereco.java&#10;pessoa&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;cota&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/cotas/Cota.java&#10;pessoa.ja&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;endere&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/endereco/Endereco.java&#10;dao&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java&#10;consu&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/pessoas/ConsultarPessoa.java&#10;abstra&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;enderecoda&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java&#10;abstr&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;bairro&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java&#10;est&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/estado/Estado.java&#10;pais&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/pais/Pais.java&#10;cidade&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/cidade/Cidade.java&#10;novape&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/pessoas/NovaPessoaForm.java&#10;BlocoDa&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/bloco/BlocoDao.java&#10;tab&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/modeltable/TableModelCliente.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -469,7 +553,7 @@
       <workItem from="1543831635925" duration="27790000" />
       <workItem from="1543917802670" duration="267000" />
       <workItem from="1544004767730" duration="24978000" />
-      <workItem from="1544090794878" duration="12380000" />
+      <workItem from="1544090794878" duration="29075000" />
     </task>
     <task id="LOCAL-00001" summary="projeto base">
       <created>1543918412385</created>
@@ -562,11 +646,32 @@
       <option name="project" value="LOCAL" />
       <updated>1544104199809</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota.">
+      <created>1544105034648</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544105034648</updated>
+    </task>
+    <task id="LOCAL-00015" summary="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota.">
+      <created>1544105109496</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544105109496</updated>
+    </task>
+    <task id="LOCAL-00016" summary="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota.">
+      <created>1544105461705</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544105461705</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269910000" />
+    <option name="totallyTimeSpent" value="286605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,12 +695,12 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.028616853" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23628384" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23628384" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
@@ -603,7 +708,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.14308426" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.12718602" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,6 +716,37 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.031796504" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23628384" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.0" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.14308426" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.16693164" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -651,33 +787,29 @@
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/PesquisarModelo.java</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="122" />
+      <option name="time" value="130" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/lista/ObservableCollections.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-664">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estado.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -703,6 +835,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#1762#1763#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,13 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1235">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -793,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -824,13 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -845,6 +959,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,17 +973,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1272#1361#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2992#2993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,23 +990,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="549" column="22" lean-forward="true" selection-start-line="549" selection-start-column="22" selection-end-line="549" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="128" column="70" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4542#4631#0" expanded="true" />
-            <element signature="e#4293#20830#0" />
-            <element signature="e#20836#21559#0" />
-            <element signature="e#21565#22432#0" />
-            <element signature="e#22438#23552#0" />
-            <element signature="e#23809#24795#0" />
-            <element signature="e#24801#25421#0" />
-            <element signature="e#25427#27643#0" />
+            <element signature="docComment;class#NovaPessoaForm#0" />
+            <element signature="e#1175#1225#0" />
+            <element signature="e#1364#1876#0" />
+            <element signature="e#1882#2803#0" />
+            <element signature="e#3138#3227#0" expanded="true" />
+            <element signature="e#2889#30256#0" />
           </folding>
         </state>
       </provider>
@@ -905,27 +1013,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3502">
-          <caret line="483" column="52" selection-start-line="479" selection-start-column="10" selection-end-line="483" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="515" column="77" lean-forward="true" selection-start-line="515" selection-start-column="77" selection-end-line="515" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -947,76 +1038,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="74" selection-start-line="21" selection-start-column="2" selection-end-line="22" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#CadastroApartamento#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2821#2822#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3453#3454#0" expanded="true" />
-            <element signature="e#3515#3516#0" expanded="true" />
-            <element signature="e#3764#3765#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
-            <element signature="e#4152#4153#0" expanded="true" />
-            <element signature="e#4219#4220#0" expanded="true" />
-            <element signature="e#4609#4610#0" expanded="true" />
-            <element signature="e#4678#4679#0" expanded="true" />
-            <element signature="e#7153#7240#0" expanded="true" />
-            <element signature="e#8655#8656#0" expanded="true" />
-            <element signature="e#8725#8726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
           <caret line="40" column="61" lean-forward="true" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#cadastroCota#0" />
-            <element signature="e#19684#19908#0" expanded="true" />
-            <element signature="e#19907#19908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="556" column="61" lean-forward="true" selection-start-line="556" selection-start-column="61" selection-end-line="556" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#27507#28314#0" />
-            <element signature="e#27581#27626#0" />
-            <element signature="e#28320#28852#0" />
-            <element signature="e#28858#29706#0" />
-            <element signature="e#29712#30589#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,35 +1055,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="139">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="353">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state relative-caret-position="486">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1524#1613#0" expanded="true" />
+            <element signature="method#initComponents#0;class#CadastroModeloCota#0" />
+            <element signature="e#4097#4098#0" expanded="true" />
+            <element signature="e#4160#4161#0" expanded="true" />
+            <element signature="e#4450#4451#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4735#4736#0" expanded="true" />
+            <element signature="e#4801#4802#0" expanded="true" />
             <element signature="method#main#0;class#CadastroModeloCota#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelperiodo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="155" column="45" lean-forward="true" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelModeloPeriodo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
@@ -1065,29 +1144,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/ConsultaModeloCota.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelperiodo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="133" column="29" lean-forward="true" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="1122">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="128" column="70" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4542#4631#0" expanded="true" />
+            <element signature="e#4293#20830#0" />
+            <element signature="e#20836#21559#0" />
+            <element signature="e#21565#22432#0" />
+            <element signature="e#22438#23552#0" />
+            <element signature="e#24801#25421#0" />
+            <element signature="e#25427#27643#0" />
+            <element signature="e#28383#28866#0" />
+            <element signature="e#28872#30954#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
             <element signature="e#355#356#0" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
@@ -1095,6 +1197,179 @@
             <element signature="e#493#494#0" expanded="true" />
             <element signature="e#548#549#0" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/PesquisarModelo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="method#main#0;class#Pesquisar#0" />
+            <element signature="e#7197#7284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="method#setcidade#0;class#NovoBairro#0" />
+            <element signature="method#initComponents#0;class#NovoBairro#0" />
+            <element signature="method#cmbPaisItemStateChanged#0;class#NovoBairro#0" />
+            <element signature="method#cmbProvinciaItemStateChanged#0;class#NovoBairro#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+          <folding>
+            <element signature="e#988#1077#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/ConsultarCotas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#2160#2161#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="179" column="28" selection-start-line="179" selection-start-column="28" selection-end-line="179" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#CadastroApartamento#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="367" column="51" lean-forward="true" selection-start-line="367" selection-start-column="51" selection-end-line="367" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4257#4258#0" expanded="true" />
+            <element signature="e#4317#4318#0" expanded="true" />
+            <element signature="e#4474#4475#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4751#4752#0" expanded="true" />
+            <element signature="e#5095#5096#0" expanded="true" />
+            <element signature="e#5158#5159#0" expanded="true" />
+            <element signature="e#6044#6045#0" expanded="true" />
+            <element signature="e#6106#6107#0" expanded="true" />
+            <element signature="e#6323#6324#0" expanded="true" />
+            <element signature="e#6389#6390#0" expanded="true" />
+            <element signature="e#6681#6682#0" expanded="true" />
+            <element signature="e#6746#6747#0" expanded="true" />
+            <element signature="e#6947#6948#0" expanded="true" />
+            <element signature="e#7008#7009#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="e#7276#7277#0" expanded="true" />
+            <element signature="e#20706#22782#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="587" lean-forward="true" selection-start-line="587" selection-end-line="587" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1512#1601#0" expanded="true" />
+            <element signature="e#1263#22470#0" />
+            <element signature="e#4200#4201#0" expanded="true" />
+            <element signature="e#4258#4259#0" expanded="true" />
+            <element signature="e#4581#4582#0" expanded="true" />
+            <element signature="e#4650#4651#0" expanded="true" />
+            <element signature="e#9123#9124#0" expanded="true" />
+            <element signature="e#9189#9190#0" expanded="true" />
+            <element signature="e#9388#9389#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9934#9935#0" expanded="true" />
+            <element signature="e#9995#9996#0" expanded="true" />
+            <element signature="e#12998#12999#0" expanded="true" />
+            <element signature="e#13062#13063#0" expanded="true" />
+            <element signature="e#13265#13266#0" expanded="true" />
+            <element signature="e#13328#13329#0" expanded="true" />
+            <element signature="e#13531#13532#0" expanded="true" />
+            <element signature="e#13594#13595#0" expanded="true" />
+            <element signature="e#16703#16704#0" expanded="true" />
+            <element signature="e#16765#16766#0" expanded="true" />
+            <element signature="e#16964#16965#0" expanded="true" />
+            <element signature="e#17025#17026#0" expanded="true" />
+            <element signature="e#17224#17225#0" expanded="true" />
+            <element signature="e#17285#17286#0" expanded="true" />
+            <element signature="e#23896#23941#0" />
+            <element signature="e#24635#25167#0" />
+            <element signature="e#25173#26021#0" />
+            <element signature="e#25246#25290#0" />
+            <element signature="e#26027#26904#0" />
+            <element signature="e#26099#26142#0" />
+            <element signature="e#26910#27487#0" />
+            <element signature="e#27493#28491#0" />
+            <element signature="e#28679#29051#0" />
+            <element signature="e#29057#31139#0" />
+            <element signature="e#29211#29298#0" expanded="true" />
+            <element signature="e#30840#31064#0" expanded="true" />
+            <element signature="e#31063#31064#0" expanded="true" />
           </folding>
         </state>
       </provider>

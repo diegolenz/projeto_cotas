@@ -29,4 +29,12 @@ public class ModeloPeriodo {
     public void setPeriodos(List<Periodo> periodos) {
         this.periodos = periodos;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
 }

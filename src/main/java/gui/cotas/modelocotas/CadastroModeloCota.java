@@ -8,9 +8,11 @@ package gui.cotas.modelocotas;
 import gui.modeltable.TableModelBloco;
 import gui.modeltable.TableModelperiodo;
 import gui.swing.DefaultComboBoxModel;
+import lib.dao.imp.cotas.ModeloPeriodoDao;
 import lib.dao.imp.cotas.PeriodoCotaDao;
 import lib.model.apartamento.Apartamento;
 import lib.model.bloco.Bloco;
+import lib.model.cotas.ModeloPeriodo;
 import lib.model.cotas.Periodo;
 import lib.model.hotel.Hotel;
 
@@ -34,6 +36,7 @@ public class CadastroModeloCota extends javax.swing.JDialog {
     private Date datacheckout=new Date();
     private Periodo periodo;
     private List <Periodo> periodos=new ArrayList<>();
+    private ModeloPeriodo modeloPeriodo=new ModeloPeriodo();
 
 
 
@@ -110,7 +113,11 @@ public class CadastroModeloCota extends javax.swing.JDialog {
         btnsalvacota.setText("salvar");
         btnsalvacota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnsalvacotaActionPerformed(evt);
+                try {
+                    btnsalvacotaActionPerformed(evt);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -137,7 +144,7 @@ public class CadastroModeloCota extends javax.swing.JDialog {
             }
         });
 
-        jLabel2.setText("desricação do modelo");
+        jLabel2.setText("desricaï¿½ï¿½o do modelo");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -259,19 +266,28 @@ public class CadastroModeloCota extends javax.swing.JDialog {
     }
 
     private void btnsalvacotaActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
-        PeriodoCotaDao dao=new PeriodoCotaDao();
-        if (periodo==null){
+        ModeloPeriodoDao dao=new ModeloPeriodoDao();
+        if (modeloPeriodo==null){
             JOptionPane.showMessageDialog(this, "falha ao salvar");
             return;
         }
-        if(periodo.getId()!=null){
+        if(modeloPeriodo.getId()!=null){
+            if (periodos.size()==0){
+                JOptionPane.showMessageDialog(this, "nenhum periodo foi adicionado na tabela");
+            }
             try {
-                dao.Alterar(periodo);
+                dao.Alterar(modeloPeriodo);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } else {
-            dao.Inserir(periodo);
+            PeriodoCotaDao daoperiodo=new PeriodoCotaDao();
+            for (Periodo p: periodos) {
+                daoperiodo.Inserir(p);
+            }
+            modeloPeriodo.setPeriodos(periodos);
+            dao.Inserir(modeloPeriodo);
+            JOptionPane.showMessageDialog(this, "modelo de periodos salvo com sucesso" );
         }
     }
 
@@ -297,7 +313,7 @@ public class CadastroModeloCota extends javax.swing.JDialog {
 
     private void btnrmvdiascotaActionPerformed(java.awt.event.ActionEvent evt) {
         if (this.tbldiascotas.getSelectedRow() < 0) {
-            JOptionPane.showMessageDialog(this, "Nenhum apartamento selecionado");
+            JOptionPane.showMessageDialog(this, "Nenhum periodo selecionado");
             return;
         } else {
             periodo = new Periodo();

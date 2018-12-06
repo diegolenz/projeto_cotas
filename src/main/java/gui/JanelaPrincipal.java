@@ -5,6 +5,7 @@
  */
 package gui;
 
+import gui.cotas.ConsultarCotas;
 import gui.cotas.Vendercota;
 import gui.cotas.modelocotas.ConsultaModeloCota;
 import gui.hotel.ConsultaHoteis;
@@ -42,14 +43,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmnuconsultacota = new javax.swing.JMenuItem();
+        mnuitmmodelocotas = new javax.swing.JMenuItem();
         jmnuvendercota = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jmnucadpessoa = new javax.swing.JMenuItem();
         mnuhotel = new javax.swing.JMenu();
         submnuconshotel = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        mnuitmmodelocotas = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
 
@@ -78,6 +78,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jmnuconsultacota);
+
+        mnuitmmodelocotas.setText("consultar modelos de cotas");
+        mnuitmmodelocotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitmmodelocotasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mnuitmmodelocotas);
 
         jmnuvendercota.setText("vender cota");
         jmnuvendercota.addActionListener(new java.awt.event.ActionListener() {
@@ -121,18 +129,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(mnuhotel);
 
-        jMenu4.setText("cotas");
-
-        mnuitmmodelocotas.setText("consultar modelos de cotas");
-        mnuitmmodelocotas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuitmmodelocotasActionPerformed(evt);
-            }
-        });
-        jMenu4.add(mnuitmmodelocotas);
-
-        jMenuBar1.add(jMenu4);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -163,9 +159,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         this.jDesktopPane1.add(obj);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jmnuconsultacotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnuconsultacotaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jmnuconsultacotaActionPerformed
+    private void jmnuconsultacotaActionPerformed(java.awt.event.ActionEvent evt) {
+        ConsultarCotas consultarCotas=new ConsultarCotas();
+        consultarCotas.setVisible(true);
+        consultarCotas.setSize(this.jDesktopPane1.getSize());
+        consultarCotas.setaframe(this); //metodo para setar o jframe principal pra abrir os j dialog dentro do mesmo
+        this.jDesktopPane1.add(consultarCotas);
+    }
 
     private void jmnuvendercotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnuvendercotaActionPerformed
         // TODO add your handling code here:
@@ -236,7 +236,6 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jmnucadpessoa;

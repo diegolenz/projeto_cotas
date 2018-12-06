@@ -10,7 +10,9 @@ import gui.hotel.apartamento.CadastroApartamento;
 import gui.hotel.bloco.*;
 import gui.modeltable.TableModelApartamento;
 import gui.modeltable.TableModelBloco;
+import lib.dao.imp.apartamento.ApartamentoDao;
 import lib.dao.imp.bloco.BlocoDao;
+import lib.dao.imp.hotel.HotelDao;
 import lib.model.apartamento.Apartamento;
 import lib.model.bloco.Bloco;
 import lib.model.hotel.Hotel;
@@ -35,6 +37,9 @@ public class CadastraHotel extends javax.swing.JDialog {
     private List<Bloco> blocos=new ArrayList<>();
     private TableModelBloco tableModelBloco=new TableModelBloco();
     private TableModelApartamento tableModelApartamento=new TableModelApartamento();
+    private BlocoDao blocoDao;
+    private ApartamentoDao apartamentoDao;
+    private HotelDao hotelDao;
 
 
     public CadastraHotel(java.awt.Frame parent, boolean modal) {
@@ -51,7 +56,9 @@ public class CadastraHotel extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pnlhotel = new javax.swing.JTabbedPane();
+        jLabel1 = new javax.swing.JLabel();
+        btnsalvarhotel = new javax.swing.JButton();
+        pnlhotelprincipal = new javax.swing.JTabbedPane();
         pnlInformacoes2 = new javax.swing.JPanel();
         lblCpfCnpj = new javax.swing.JLabel();
         edtNome = new javax.swing.JTextField();
@@ -81,23 +88,28 @@ public class CadastraHotel extends javax.swing.JDialog {
         btnrmvApa = new javax.swing.JButton();
         btnaltApa = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        pnlcota = new javax.swing.JPanel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jtblcotas = new javax.swing.JTable();
-        btnnvcota = new javax.swing.JButton();
-        btnaltcota = new javax.swing.JButton();
-        btnrmvcota = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        btnsalvarhotel = new javax.swing.JButton();
         btncanccad = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        pnlhotel.setBackground(new java.awt.Color(255, 255, 255));
-        pnlhotel.setToolTipText("");
-        pnlhotel.setName("blocos"); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setText("cadastro de hotel");
+
+        btnsalvarhotel.setText("salvar cadastro");
+        btnsalvarhotel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                try {
+                    btnsalvarhotelActionPerformed(evt);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        pnlhotelprincipal.setBackground(new java.awt.Color(255, 255, 255));
+        pnlhotelprincipal.setToolTipText("");
+        pnlhotelprincipal.setName("blocos"); // NOI18N
 
         pnlInformacoes2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -113,7 +125,7 @@ public class CadastraHotel extends javax.swing.JDialog {
 
         lblNome.setText("Nome ");
 
-        btnsalvarinfhotel.setText("salvar informacoes");
+        btnsalvarinfhotel.setText("salvar informacoes e prosseguir");
         btnsalvarinfhotel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalvarinfhotelActionPerformed(evt);
@@ -125,19 +137,20 @@ public class CadastraHotel extends javax.swing.JDialog {
         pnlInformacoes2Layout.setHorizontalGroup(
             pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlInformacoes2Layout.createSequentialGroup()
+                .addGroup(pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblCpfCnpj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRazaoSocial, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
                 .addGroup(pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlInformacoes2Layout.createSequentialGroup()
-                        .addGroup(pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblCpfCnpj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblRazaoSocial, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblNome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(46, 46, 46)
-                        .addGroup(pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(edtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(edtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(edtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(btnsalvarinfhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(edtRazaoSocial, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(edtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(edtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(372, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlInformacoes2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnsalvarinfhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
         );
         pnlInformacoes2Layout.setVerticalGroup(
             pnlInformacoes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,12 +170,12 @@ public class CadastraHotel extends javax.swing.JDialog {
                     .addGroup(pnlInformacoes2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(edtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(31, 31, 31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 346, Short.MAX_VALUE)
                 .addComponent(btnsalvarinfhotel)
-                .addContainerGap())
+                .addGap(19, 19, 19))
         );
 
-        pnlhotel.addTab("Informacoes basicas", pnlInformacoes2);
+        pnlhotelprincipal.addTab("Informacoes basicas", pnlInformacoes2);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -236,7 +249,7 @@ public class CadastraHotel extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        pnlhotel.addTab("enderecos", jPanel1);
+        pnlhotelprincipal.addTab("enderecos", jPanel1);
 
         jpnl.setBackground(new java.awt.Color(255, 255, 255));
         jpnl.setName("bloco"); // NOI18N
@@ -313,7 +326,7 @@ public class CadastraHotel extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        pnlhotel.addTab("bloco", jpnl);
+        pnlhotelprincipal.addTab("bloco", jpnl);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -386,86 +399,7 @@ public class CadastraHotel extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        pnlhotel.addTab("Apartamento", jPanel2);
-
-        pnlcota.setBackground(new java.awt.Color(255, 255, 255));
-        pnlcota.setName("cotas"); // NOI18N
-
-        jtblcotas.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane4.setViewportView(jtblcotas);
-
-        btnnvcota.setText("novo");
-        btnnvcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnnvcotaActionPerformed(evt);
-            }
-        });
-
-        btnaltcota.setText("alterar");
-        btnaltcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnaltcotaActionPerformed(evt);
-            }
-        });
-
-        btnrmvcota.setText("remover");
-        btnrmvcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnrmvcotaActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("Cotas");
-
-        javax.swing.GroupLayout pnlcotaLayout = new javax.swing.GroupLayout(pnlcota);
-        pnlcota.setLayout(pnlcotaLayout);
-        pnlcotaLayout.setHorizontalGroup(
-            pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlcotaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
-                    .addGroup(pnlcotaLayout.createSequentialGroup()
-                        .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlcotaLayout.createSequentialGroup()
-                                .addComponent(btnnvcota, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnrmvcota, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26)
-                                .addComponent(btnaltcota, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel5))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        pnlcotaLayout.setVerticalGroup(
-            pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlcotaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnnvcota)
-                    .addComponent(btnaltcota)
-                    .addComponent(btnrmvcota))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        pnlhotel.addTab("cotas", pnlcota);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("cadastro de hotel");
-
-        btnsalvarhotel.setText("salvar cadastro");
+        pnlhotelprincipal.addTab("Apartamento", jPanel2);
 
         btncanccad.setText("cancelar cadastro");
 
@@ -487,7 +421,7 @@ public class CadastraHotel extends javax.swing.JDialog {
                                 .addGap(18, 18, 18)
                                 .addComponent(btnsalvarhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(pnlhotel))))
+                            .addComponent(pnlhotelprincipal))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -496,7 +430,7 @@ public class CadastraHotel extends javax.swing.JDialog {
                 .addGap(13, 13, 13)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnlhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlhotelprincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnsalvarhotel)
@@ -635,27 +569,42 @@ public class CadastraHotel extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_btnaltApaActionPerformed
 
-    private void btnnvcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnvcotaActionPerformed
-        cadastroCota cadastroCota=new cadastroCota(null, true);
-        cadastroCota.setobj(hotel, blocos, apartamentos);
-        cadastroCota.setVisible(true);
-    }//GEN-LAST:event_btnnvcotaActionPerformed
+    private void btnsalvarhotelActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
+        if (hotel!=null) {
+            hotelDao = new HotelDao();
+            hotelDao.Inserir(hotel);
+        } else {
+            JOptionPane.showMessageDialog(this, "não foi possivel salvar");
+            return;
+        }
+        if (blocos!=null) {
+            if (blocos.size()!=0){
+                blocoDao=new BlocoDao();
+                for (Bloco b : blocos){
+                    blocoDao.Inserir(b);
+                }
+            }
+        }
 
-    private void btnrmvcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrmvcotaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnrmvcotaActionPerformed
+        if (apartamentos!=null) {
+            if (apartamentos.size()!=0){
+                apartamentoDao=new ApartamentoDao();
+                for (Apartamento p : apartamentos){
+                    apartamentoDao.Inserir(p);
+                }
+            }
+        }
 
-    private void btnaltcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaltcotaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnaltcotaActionPerformed
+    }
 
-    private void btnsalvarinfhotelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalvarinfhotelActionPerformed
+    private void btnsalvarinfhotelActionPerformed(java.awt.event.ActionEvent evt) {
         hotel=new Hotel();
         hotel.setNome(edtNome.getText());
         hotel.setCpfCnpj(edtCpf.getText());
         hotel.setRazaoSocial(edtRazaoSocial.getText());
         JOptionPane.showMessageDialog(this,"informacoes salvas");
-    }//GEN-LAST:event_btnsalvarinfhotelActionPerformed
+        this.pnlhotelprincipal.setSelectedIndex(1);
+    }
 
     /**
      * @param args the command line arguments
@@ -702,16 +651,13 @@ public class CadastraHotel extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnaltApa;
     private javax.swing.JButton btnaltbloco;
-    private javax.swing.JButton btnaltcota;
     private javax.swing.JButton btnaltend;
     private javax.swing.JButton btncanccad;
     private javax.swing.JButton btnnovoApa;
     private javax.swing.JButton btnnovobloco;
-    private javax.swing.JButton btnnvcota;
     private javax.swing.JButton btnnvenderecos;
     private javax.swing.JButton btnrmvApa;
     private javax.swing.JButton btnrmvbloco;
-    private javax.swing.JButton btnrmvcota;
     private javax.swing.JButton btnrmvend;
     private javax.swing.JButton btnsalvarhotel;
     private javax.swing.JButton btnsalvarinfhotel;
@@ -722,22 +668,18 @@ public class CadastraHotel extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JPanel jpnl;
     private javax.swing.JTable jtblapartamento;
-    private javax.swing.JTable jtblcotas;
     private javax.swing.JLabel lblCpfCnpj;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblRazaoSocial;
     private javax.swing.JPanel pnlInformacoes2;
-    private javax.swing.JPanel pnlcota;
-    private javax.swing.JTabbedPane pnlhotel;
+    private javax.swing.JTabbedPane pnlhotelprincipal;
     private javax.swing.JTable tabelabloco;
     private javax.swing.JTable tabelaend;
     // End of variables declaration//GEN-END:variables
