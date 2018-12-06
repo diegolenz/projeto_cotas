@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3acfd894-7a82-406b-8733-1dff82d3ccdb" name="Default" comment="projeto base, cadastro hotel, faltando endereco e &#10;cota">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelBloco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelBloco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCota.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCotaIntegrantres.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCotaIntegrantres.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$Callback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/CotasDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/CotasDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/cotas/Cota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/cotas/Cota.class" afterDir="false" />
-    </list>
+    <list default="true" id="3acfd894-7a82-406b-8733-1dff82d3ccdb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,13 +36,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Periodo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Periodo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="170">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModeloPeriodo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +91,8 @@
       <file leaf-file-name="CadastroModeloCota.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="40" />
+            <state relative-caret-position="236">
+              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#CadastroModeloCota#0" />
@@ -146,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/handler/AbstractDaoEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/Pais.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estados.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/enderecos/Endereco.java" />
@@ -197,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelperiodo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java" />
       </list>
     </option>
   </component>
@@ -472,7 +469,7 @@
       <workItem from="1543831635925" duration="27790000" />
       <workItem from="1543917802670" duration="267000" />
       <workItem from="1544004767730" duration="24978000" />
-      <workItem from="1544090794878" duration="11515000" />
+      <workItem from="1544090794878" duration="12380000" />
     </task>
     <task id="LOCAL-00001" summary="projeto base">
       <created>1543918412385</created>
@@ -558,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544040848299</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota.">
+      <created>1544104199809</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544104199809</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269045000" />
+    <option name="totallyTimeSpent" value="269910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,12 +590,12 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23628384" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23628384" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
@@ -622,7 +626,8 @@
     <MESSAGE value="projeto base, fazendo cotas" />
     <MESSAGE value="projeto base, cad hotel faltando cota" />
     <MESSAGE value="projeto base, cadastro hotel, faltando endereco e &#10;cota" />
-    <option name="LAST_COMMIT_MESSAGE" value="projeto base, cadastro hotel, faltando endereco e &#10;cota" />
+    <MESSAGE value="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota." />
+    <option name="LAST_COMMIT_MESSAGE" value="projeto base, fazendo modelo de cota, para o usuario nao precisar cadastrar os periodos a cada vez que adicionar uma cota." />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -651,13 +656,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/bairro/Bairro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Comparable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1048,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/modelocotas/CadastroModeloCota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="40" />
+        <state relative-caret-position="236">
+          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#CadastroModeloCota#0" />
@@ -1076,10 +1074,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
           </folding>
         </state>
       </provider>
