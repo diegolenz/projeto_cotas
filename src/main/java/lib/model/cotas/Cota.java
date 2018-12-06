@@ -17,6 +17,8 @@ public class Cota {
     )
 
     private Integer id;
+    @OneToMany
+    private List<Periodo> periodos;
     @ManyToOne
     protected PessoaCotaTitular titular;
     @ManyToMany(mappedBy="cotas")
@@ -39,6 +41,14 @@ public class Cota {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public List<Periodo> getPeriodos() {
+        return periodos;
+    }
+
+    public void setPeriodos(List<Periodo> periodos) {
+        this.periodos = periodos;
     }
 
     public PessoaCotaTitular getTitular() {

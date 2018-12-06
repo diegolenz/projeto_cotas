@@ -603,7 +603,15 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnnovoApaActionPerformed
 
     private void btnrmvApaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrmvApaActionPerformed
-        // TODO add your handling code here:
+        if (this.jtblapartamento.getSelectedRow() < 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum apartamento selecionado");
+            return;
+        } else {
+            apartamento = new Apartamento();
+            apartamento = apartamentos.get(jtblapartamento.getSelectedRow());
+            apartamentos.remove(bloco);
+            this.jtblapartamento.setModel(tableModelApartamento);
+        }
 
     }//GEN-LAST:event_btnrmvApaActionPerformed
 
@@ -628,7 +636,6 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnaltApaActionPerformed
 
     private void btnnvcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnvcotaActionPerformed
-        // TODO add your handling code here:
         cadastroCota cadastroCota=new cadastroCota(null, true);
         cadastroCota.setobj(hotel, blocos, apartamentos);
         cadastroCota.setVisible(true);
@@ -643,7 +650,6 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnaltcotaActionPerformed
 
     private void btnsalvarinfhotelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalvarinfhotelActionPerformed
-        // TODO add your handling code here:
         hotel=new Hotel();
         hotel.setNome(edtNome.getText());
         hotel.setCpfCnpj(edtCpf.getText());
