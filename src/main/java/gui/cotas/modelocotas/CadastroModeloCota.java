@@ -256,7 +256,7 @@ public class CadastroModeloCota extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {
-        int resposta = JOptionPane.showConfirmDialog(null, "O cancelamento da operação não salvará os dados, deseja exluir?", null, JOptionPane.YES_NO_OPTION);
+        int resposta = JOptionPane.showConfirmDialog(null, "O cancelamento da operação não salvará os dados, deseja cancelar?", null, JOptionPane.YES_NO_OPTION);
 
         if (resposta == JOptionPane.YES_OPTION) {
             dispose();

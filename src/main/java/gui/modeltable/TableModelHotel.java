@@ -1,5 +1,6 @@
 package gui.modeltable;
 
+import lib.model.hotel.Hotel;
 import lib.model.pessoa.Pessoa;
 import lib.model.pessoa.Pessoajuridica;
 
@@ -39,18 +40,21 @@ public class TableModelHotel extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 6;
+        return 4;
     }
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Pessoa obj = (Pessoa) list[rowIndex];
+        Hotel obj = (Hotel) list[rowIndex];
         switch (columnIndex) {
             case 0:
                 return obj.getId();
             case 1:
-                return obj.getCpfCnpj();
+                return obj.getRazaoSocial();
             case 2:
+                return obj.getNome();
+            case 3:
+                return obj.getCpfCnpj();
 
         }
         return "";
@@ -62,8 +66,12 @@ public class TableModelHotel extends AbstractTableModel {
             case 0:
                 return "codigo";
             case 1:
-                return "nome";
+                return "razao social";
+            case 2:
+                return "nome fantasia";
             case 3:
+                return "cnpj";
+
         }
         return "";
     }

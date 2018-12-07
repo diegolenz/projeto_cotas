@@ -35,7 +35,7 @@ public class TableModelCota extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 6;
+        return 3;
     }
 
     @Override
@@ -45,8 +45,10 @@ public class TableModelCota extends AbstractTableModel {
             case 0:
                 return p.getId();
             case 1:
-                return p.getNumero();
+                return p.getDescricao();
             case 2:
+                return p.getTitular();
+
 
         }
         return "";
@@ -58,6 +60,13 @@ public class TableModelCota extends AbstractTableModel {
             case 0:
                 return "codigo";
             case 1:
+                return "numero";
+            case 2:
+                return "titular";
+            case 3:
+                return "bloco";
+            case 4:
+                return "hotel";
         }
         return "";
     }

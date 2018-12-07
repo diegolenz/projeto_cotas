@@ -20,19 +20,13 @@ public class Apartamento {
     )
 
     private Integer id;
-  //  @javax.validation.constraints.NotEmpty
-    @Column(
-            length = 255
-    )
-    @Basic(
-            fetch = FetchType.LAZY
-    )
+
     private Integer numero;
     @ManyToOne
     private Bloco bloco;
 
 
-    @OneToMany
+    @OneToMany (cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Cota> cotas;
 
     public Integer getId() {

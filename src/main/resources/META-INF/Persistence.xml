@@ -5,6 +5,7 @@
 	  <class>lib.model.cotas.Cota</class>
 	  <class>lib.model.apartamento.Apartamento</class>
 	  <class>lib.model.hotel.Hotel</class>
+      <class>lib.model.bloco.Bloco</class>
 	  <class>lib.model.pessoa.Pessoa</class>
 	  <class>lib.model.pessoa.Pessoajuridica</class>
 	  <class>lib.model.pessoa.TipoPessoa</class>
@@ -23,8 +24,8 @@
 		  <!--  Configurações específicas do Hibernate  -->
 		  <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
 		  <!--  <property name="hibernate.hbm2ddl.auto" value="update"/> -->
-
-		  <property name="hibernate.format_sql" value="true"/>
+          <property name="hibernate.hbm2ddl.auto" value="none"/>
+          <property name="hibernate.format_sql" value="true"/>
 		  <property name="hibernate.show_sql" value="true"/>
        </properties>
    </persistence-unit>

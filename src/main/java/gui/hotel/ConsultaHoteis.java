@@ -6,13 +6,23 @@
 package gui.hotel;
 
 import gui.cotas.cadastroCota;
+import gui.modeltable.TableModelHotel;
+import lib.dao.imp.hotel.HotelDao;
+import lib.model.hotel.Hotel;
+
+import javax.swing.*;
+import java.util.List;
 
 /**
  *
  * @author Diego
  */
 public class ConsultaHoteis extends javax.swing.JInternalFrame {
-
+    private  CadastraHotel cadastrohotel;
+    private Hotel hotel;
+    private List<Hotel> hoteis;
+    private HotelDao hotelDao;
+    private TableModelHotel tableModelHotel=new TableModelHotel();
     /**
      * Creates new form ConsultaHoteis
      */
@@ -44,6 +54,11 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
         setClosable(true);
 
         btnpesquisar.setText("pesquisar");
+        btnpesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpesquisarActionPerformed(evt);
+            }
+        });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -65,8 +80,18 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
         });
 
         btnalterar.setText("alterar");
+        btnalterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnalterarActionPerformed(evt);
+            }
+        });
 
         btnvisualizar.setText("visualizar");
+        btnvisualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnvisualizarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -131,12 +156,33 @@ public class ConsultaHoteis extends javax.swing.JInternalFrame {
 
     private void btnnovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovoActionPerformed
         // TODO add your handling code here:
-        CadastraHotel cadastrohotel=new CadastraHotel(null, true);
-       // cadastrohotel.show();
+        cadastrohotel=new CadastraHotel(null, true);
         cadastrohotel.setVisible(true);
 
 
     }//GEN-LAST:event_btnnovoActionPerformed
+
+    private void btnpesquisarActionPerformed(java.awt.event.ActionEvent evt) {
+        hotelDao=new HotelDao();
+        hoteis=hotelDao.listar();
+        this.tableModelHotel.setList(hoteis.toArray());
+        this.jTable1.setModel(tableModelHotel);
+    }
+
+    private void btnalterarActionPerformed(java.awt.event.ActionEvent evt) {
+        cadastrohotel=new CadastraHotel(null, true);
+        if (jTable1.getSelectedRow()<0){
+            JOptionPane.showMessageDialog(this, "selecione um hotel.");
+            return;
+        }
+        hotel=hoteis.get(jTable1.getSelectedRow());
+        cadastrohotel.setHotel(hotel);
+        cadastrohotel.setVisible(true);
+    }
+
+    private void btnvisualizarActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

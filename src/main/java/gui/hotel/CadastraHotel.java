@@ -46,7 +46,25 @@ public class CadastraHotel extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
     }
+    public void setHotel(Hotel hotel){
+        this.hotel=new Hotel();
+        this.hotel=hotel;
+        this.carregaredt();
 
+    }
+    public void carregaredt(){
+        this.edtNome.setText(hotel.getNome());
+        this.edtCpf.setText(hotel.getCpfCnpj());
+        this.edtRazaoSocial.setText(hotel.getRazaoSocial());
+        this.tableModelBloco.setList(hotel.getBlocos().toArray());
+        this.blocos=hotel.getBlocos();
+        for (Bloco b : blocos){
+            apartamentos.addAll(b.getApartamentos());
+        }
+        this.tableModelApartamento.setList(apartamentos.toArray());
+        this.tabelabloco.setModel(tableModelBloco);
+        this.jtblapartamento.setModel(tableModelApartamento);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -524,8 +542,9 @@ public class CadastraHotel extends javax.swing.JDialog {
         if (bloco == null){
             JOptionPane.showMessageDialog(this, "cadastre ao menos um bloco para poder cadastrar um apartamento.");
         } else {
-                CadastroApartamento.Callback callback = (apartamento) -> {
+                CadastroApartamento.Callback callback = (apartamento, blocos) -> {
                 this.apartamento = apartamento;
+                this.blocos=blocos;
                 apartamentos.add(this.apartamento);
                 tableModelApartamento.setList(apartamentos.toArray());
                 this.jtblapartamento.setModel(tableModelApartamento);
@@ -557,7 +576,7 @@ public class CadastraHotel extends javax.swing.JDialog {
         } else {
             apartamento=new Apartamento();
             apartamento=apartamentos.get(jtblapartamento.getSelectedRow());
-            CadastroApartamento.Callback callback = (apartamento) -> {
+            CadastroApartamento.Callback callback = (apartamento,blocos) -> {
                 this.apartamento = apartamento;
                 tableModelApartamento.setList(apartamentos.toArray());
                 this.jtblapartamento.setModel(tableModelApartamento);
@@ -570,30 +589,21 @@ public class CadastraHotel extends javax.swing.JDialog {
     }//GEN-LAST:event_btnaltApaActionPerformed
 
     private void btnsalvarhotelActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
+
         if (hotel!=null) {
+            hotel.setBlocos(blocos);
             hotelDao = new HotelDao();
             hotelDao.Inserir(hotel);
+            JOptionPane.showMessageDialog(this, "salvo com sucesso");
+            dispose();
         } else {
             JOptionPane.showMessageDialog(this, "não foi possivel salvar");
             return;
         }
-        if (blocos!=null) {
-            if (blocos.size()!=0){
-                blocoDao=new BlocoDao();
-                for (Bloco b : blocos){
-                    blocoDao.Inserir(b);
-                }
-            }
-        }
 
-        if (apartamentos!=null) {
-            if (apartamentos.size()!=0){
-                apartamentoDao=new ApartamentoDao();
-                for (Apartamento p : apartamentos){
-                    apartamentoDao.Inserir(p);
-                }
-            }
-        }
+
+
+
 
     }
 

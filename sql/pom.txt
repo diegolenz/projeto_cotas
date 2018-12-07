@@ -1,4 +1,4 @@
-
+﻿
 drop table pessoacotatitular_cota cascade;
 
 insert into pessoa (nome, cpfcnpj) values ('diego', '09351975907');
@@ -31,4 +31,15 @@ drop table pessoacotatitular cascade;
 drop table pessoacota_cota cascade;
 drop table apartamento_cota cascade;
 drop table pessoacota cascade;
+drop table bairro_endereco cascade;
+drop table cidade cascade;
+drop table bairro ;
+drop table bairro cascade;
+drop table cota_periodo cascade;
+drop table estado cascade;
+drop table modeloperiodo cascade;
+drop table endereco cascade;
+drop table periodo cascade;
+drop table provincia cascade;
+drop table pessoa_endereco;
   

@@ -133,8 +133,8 @@ public class Pesquisar extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnpesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesquisarActionPerformed
-        // TODO add your handling code here:
+    private void btnpesquisarActionPerformed(java.awt.event.ActionEvent evt) {
+
         modelo =new TableModelPessoa();
        list= pessoadao.listar();
        modelo.setList(list.toArray());

@@ -11,6 +11,7 @@ import lib.model.bloco.Bloco;
 import lib.model.hotel.Hotel;
 
 import javax.swing.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,15 +21,16 @@ import java.util.List;
 public class CadastroApartamento extends javax.swing.JDialog {
 
     private DefaultComboBoxModel cmbblocolmodel=new DefaultComboBoxModel();
-    private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
+    //private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
     private Apartamento apartamento=new Apartamento();
     private final Callback callback;
-    private List<Bloco> blocos;
+    private List<Bloco> blocos=new ArrayList<>();
+    private List<Apartamento> apartamentos=new ArrayList<>();
 
 
     public interface Callback {
 
-        void handle(Apartamento apartamento);
+        void handle(Apartamento apartamento, List<Bloco> blocos);
     }
 
     public void setapartamento(Apartamento ap){
@@ -43,7 +45,7 @@ public class CadastroApartamento extends javax.swing.JDialog {
     }
 
     public void setabloco_hotel(Hotel hotel, List<Bloco> blocos){
-        this.cmbhotelmodel.addElement(hotel);
+        //this.cmbhotelmodel.addElement(hotel);
         this.edthotel.setText(hotel.getNome());
         for (Bloco b: blocos){
             cmbblocolmodel.addElement(b.getDescricao());
@@ -78,8 +80,14 @@ public class CadastroApartamento extends javax.swing.JDialog {
         jLabel1.setText("hotel");
 
         edthotel.setEditable(false);
+        edthotel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        edthotel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                edthotelActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setText("apartamento");
+        jLabel2.setText("Bloco");
 
         jLabel3.setText("descricao");
 
@@ -179,14 +187,24 @@ public class CadastroApartamento extends javax.swing.JDialog {
         for (Bloco b:blocos){
             if (b.getDescricao()==cmbbloco.getSelectedItem()){
                 apartamento.setBloco(b);
+                apartamentos.add(apartamento);
+                if (b.getApartamentos()== null) {
+                    b.setApartamentos(apartamentos);
+                } else {
+                    b.getApartamentos().add(apartamento);
+                }
             }
         }
 
-        callback.handle(apartamento);
+        callback.handle(apartamento,blocos);
         dispose();
 
 
     }//GEN-LAST:event_btnsalvarActionPerformed
+
+    private void edthotelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edthotelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_edthotelActionPerformed
 
     /**
      * @param args the command line arguments
