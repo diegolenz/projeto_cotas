@@ -65,7 +65,7 @@ public class BlocoDao extends AbstractDao {
         try {
             em.getTransaction().begin();
             list= em.createQuery
-                    ("from Bloco where hotel_id=" + obj.getId()).getResultList();
+                    ("select e FROM bloco e where  e.bloco  like UPPER ("+obj.getId()+") ").getResultList();
             em.getTransaction().commit();
 
             return list;

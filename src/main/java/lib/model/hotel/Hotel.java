@@ -21,7 +21,7 @@ public class Hotel extends Pessoa {
     private Integer id;
 
 
-    @OneToMany
+    @OneToMany( cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Bloco> blocos;
 
     public Integer getId() {

@@ -17,20 +17,50 @@ public class Cota {
     )
 
     private Integer id;
+    @OneToMany
+    private List<Periodo> periodos;
     @ManyToOne
     protected PessoaCotaTitular titular;
     @ManyToMany(mappedBy="cotas")
     protected List<Pessoa> integrantes;
     @ManyToOne
     protected Apartamento apartamento;
-    protected Integer numero;
+    protected String descricao;
+    protected String situacao;
+    protected Double valor;
+    protected Double valormensalidade;
 
-    public Integer getNumero() {
-        return numero;
+
+    public Double getValor() {
+        return valor;
     }
 
-    public void setNumero(Integer numero) {
-        this.numero = numero;
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+
+    public Double getValormensalidade() {
+        return valormensalidade;
+    }
+
+    public void setValormensalidade(Double valormensalidade) {
+        this.valormensalidade = valormensalidade;
+    }
+
+    public String getSituacao() {
+        return situacao;
+    }
+
+    public void setSituacao(String situacao) {
+        this.situacao = situacao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public Integer getId() {
@@ -39,6 +69,14 @@ public class Cota {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public List<Periodo> getPeriodos() {
+        return periodos;
+    }
+
+    public void setPeriodos(List<Periodo> periodos) {
+        this.periodos = periodos;
     }
 
     public PessoaCotaTitular getTitular() {

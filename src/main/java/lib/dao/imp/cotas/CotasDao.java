@@ -36,7 +36,9 @@ public class CotasDao extends AbstractDao {
 
         List <Cota> list = null;
         try {
-            em.getTransaction().begin();
+            if (!em.getTransaction().isActive()) {
+                em.getTransaction().begin();
+            }
             list= em.createQuery
                     ("from Cota ").getResultList();
             em.getTransaction().commit();
@@ -59,6 +61,26 @@ public class CotasDao extends AbstractDao {
             em.getTransaction().begin();
             list= em.createQuery
                     ("from Cota where apartamento_id ="+ obj.getId()).getResultList();
+            em.getTransaction().commit();
+
+            return list;
+
+        } catch ( HibernateException e ) {
+            if ( em.getTransaction() != null )
+                em.getTransaction().rollback();
+        } finally {
+            //  em.close();
+        }
+        return list;
+    }
+
+    public List listarporstatus() {
+
+        List <Cota> list = null;
+        try {
+            em.getTransaction().begin();
+            list= em.createQuery
+                    ("from Cota  where situacao= 'ATIVADO' ").getResultList();
             em.getTransaction().commit();
 
             return list;

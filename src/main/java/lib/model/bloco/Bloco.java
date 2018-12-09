@@ -14,7 +14,7 @@ public class Bloco {
     private Integer id;
     @ManyToOne
     private Hotel hotel;
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Apartamento> apartamentos;
     private String descricao;
 

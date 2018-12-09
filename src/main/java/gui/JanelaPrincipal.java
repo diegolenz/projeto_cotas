@@ -5,7 +5,9 @@
  */
 package gui;
 
+import gui.cotas.ConsultarCotas;
 import gui.cotas.Vendercota;
+import gui.cotas.modelocotas.ConsultaModeloCota;
 import gui.hotel.ConsultaHoteis;
 import gui.pessoas.ConsultarPessoa;
 import gui.pessoas.ConsultarPessoas;
@@ -41,6 +43,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmnuconsultacota = new javax.swing.JMenuItem();
+        mnuitmmodelocotas = new javax.swing.JMenuItem();
         jmnuvendercota = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -75,6 +78,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jmnuconsultacota);
+
+        mnuitmmodelocotas.setText("consultar modelos de cotas");
+        mnuitmmodelocotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitmmodelocotasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mnuitmmodelocotas);
 
         jmnuvendercota.setText("vender cota");
         jmnuvendercota.addActionListener(new java.awt.event.ActionListener() {
@@ -134,10 +145,11 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jmnucadpessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnucadpessoaActionPerformed
-        // TODO add your handling code here:
+    private void jmnucadpessoaActionPerformed(java.awt.event.ActionEvent evt) {                                              
+     
 
-    }//GEN-LAST:event_jmnucadpessoaActionPerformed
+
+    }
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -147,9 +159,13 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         this.jDesktopPane1.add(obj);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jmnuconsultacotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnuconsultacotaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jmnuconsultacotaActionPerformed
+    private void jmnuconsultacotaActionPerformed(java.awt.event.ActionEvent evt) {
+        ConsultarCotas consultarCotas=new ConsultarCotas();
+        consultarCotas.setVisible(true);
+        consultarCotas.setSize(this.jDesktopPane1.getSize());
+        consultarCotas.setaframe(this); //metodo para setar o jframe principal pra abrir os j dialog dentro do mesmo
+        this.jDesktopPane1.add(consultarCotas);
+    }
 
     private void jmnuvendercotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmnuvendercotaActionPerformed
         // TODO add your handling code here:
@@ -171,6 +187,14 @@ public class JanelaPrincipal extends javax.swing.JFrame {
       //  obj.setaframe(this); //metodo para setar o jframe principal pra abrir os j dialog dentro do mesmo
         this.jDesktopPane1.add(obj);
     }//GEN-LAST:event_submnuconshotelActionPerformed
+
+    private void mnuitmmodelocotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitmmodelocotasActionPerformed
+        // TODO add your handling code here:
+           ConsultaModeloCota obj=new ConsultaModeloCota();
+        obj.setVisible(true);
+        obj.setSize(this.jDesktopPane1.getSize());
+        this.jDesktopPane1.add(obj);
+    }//GEN-LAST:event_mnuitmmodelocotasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,6 +242,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmnuconsultacota;
     private javax.swing.JMenuItem jmnuvendercota;
     private javax.swing.JMenu mnuhotel;
+    private javax.swing.JMenuItem mnuitmmodelocotas;
     private javax.swing.JMenuItem submnuconshotel;
     // End of variables declaration//GEN-END:variables
 }

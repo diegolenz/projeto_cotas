@@ -70,10 +70,8 @@ public class NovaPessoaForm extends javax.swing.JDialog {
         pessoa.setRazaoSocial(txtRazaoSocial.getText());
         pessoa.setProfissao(txtProfissao.getText());
         System.out.println(txtSalario.getText());
-        if (txtSalario.getText()==""){
-            txtSalario.setText("00.00");
-        }
-            pessoa.setValorSalario(Double.parseDouble(txtSalario.getText()));
+        if (txtSalario.getValue()!=null)
+            pessoa.setValorSalario(Double.parseDouble(txtSalario.getText().replace(',','.')));
         if (cmbtipocad.getSelectedItem() == "FISICA") {
             pessoa.setTipo(tipoPessoa.FISICA);
         } else if (cmbtipocad.getSelectedItem() == "JURIDICA") {
@@ -539,9 +537,11 @@ public class NovaPessoaForm extends javax.swing.JDialog {
         pessoa.setEnderecos(enderecos);
         EnderecoDao enderecoDao=new EnderecoDao();
         Endereco end=new Endereco();
-        for ( int i=0; i< enderecos.size(); ) {
-            enderecoDao.Inserir(enderecos.get(i));
-            i=i+1;
+        if (enderecos!=null) {
+            for (int i = 0; i < enderecos.size(); ) {
+                enderecoDao.Inserir(enderecos.get(i));
+                i = i + 1;
+            }
         }
         try {
             pessoaDao = new PessoaDao();

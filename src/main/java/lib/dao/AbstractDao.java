@@ -29,7 +29,9 @@ public class AbstractDao<T>   {
     }
 
     public void Inserir( Object obj ) throws Exception {
-        em.getTransaction().begin();
+        if (!em.getTransaction().isActive()) {
+            em.getTransaction().begin();
+        }
         em.persist(obj);
         em.getTransaction().commit();
         //em.close();

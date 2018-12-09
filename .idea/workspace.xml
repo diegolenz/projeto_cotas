@@ -5,29 +5,169 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/enderecos/bairro/NovoBairro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCotaIntegrantres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCotaIntegrantres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelEndereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelPessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/swing/DefaultComboBoxModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/swing/DefaultComboBoxModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/handler/AbstractDaoEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/handler/AbstractDaoEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/apartamento/ApartamentoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/apartamento/ApartamentoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/bloco/BlocoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/bloco/BlocoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PessoaCotaTitularDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PessoaCotaTitularDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/pais/PaisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/pais/PaisDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/provincia/ProvinciaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/provincia/ProvinciaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/hotel/HotelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/hotel/HotelDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/dao/imp/pessoa/PessoaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/dao/imp/pessoa/PessoaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/apartamento/Apartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/apartamento/Apartamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCotaTitular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCotaTitular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/bairro/Bairro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/bairro/Bairro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/cidade/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/cidade/Cidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/endereco/provincia/Provincia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/endereco/provincia/Provincia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/hotel/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/hotel/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoajuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoajuridica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/TipoPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lib/model/pessoa/TipoPessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/CpfCnpjValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/CpfCnpjValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/JpaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JpaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/MascaraMonetaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MascaraMonetaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/validacao/ValidacaoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/validacao/ValidacaoFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/JanelaPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/cotas/Vendercota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/NovoEndereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/enderecos/bairro/NovoBairro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelApartamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelApartamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelBloco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelBloco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCotaIntegrantres.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelCotaIntegrantres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelHotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelPessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/modeltable/TableModelPessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa$Callback.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pesquisa/Pesquisa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/ConsultarPessoas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/pessoas/NovaPessoaForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$Callback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota$Callback.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/selecionacota/SelecionaCota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/swing/DefaultComboBoxModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/swing/DefaultComboBoxModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/AbstractDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/apartamento/ApartamentoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/apartamento/ApartamentoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/bloco/BlocoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/bloco/BlocoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/CotasDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/CotasDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/PessoaCotaTitularDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/cotas/PessoaCotaTitularDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/bairro/BairroDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/bairro/BairroDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/endereco/EnderecoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/endereco/EnderecoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/estado/EstadoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/estado/EstadoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/pais/PaisDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/pais/PaisDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/provincia/ProvinciaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/endereco/provincia/ProvinciaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/hotel/HotelDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/hotel/HotelDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/dao/imp/pessoa/PessoaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/dao/imp/pessoa/PessoaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/apartamento/Apartamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/apartamento/Apartamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/bloco/Bloco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/bloco/Bloco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/cotas/Cota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/cotas/Cota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/endereco/bairro/Bairro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/bairro/Bairro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/endereco/cidade/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/cidade/Cidade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/endereco/estado/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/estado/Estado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/endereco/provincia/Provincia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/endereco/provincia/Provincia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lib/model/hotel/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lib/model/hotel/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/CpfCnpjValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/CpfCnpjValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/MascaraMonetaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/MascaraMonetaria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/validacao/ValidacaoFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/validacao/ValidacaoFacade.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,161 +187,116 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="NovoEndereco.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1224">
-                    <caret line="128" column="70" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="70" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="e#4542#4631#0" expanded="true" />
-                      <element signature="e#4293#20830#0" />
-                      <element signature="e#20836#21559#0" />
-                      <element signature="e#21565#22432#0" />
-                      <element signature="e#22438#23552#0" />
-                      <element signature="e#23809#24795#0" />
-                      <element signature="e#24801#25421#0" />
-                      <element signature="e#25427#27643#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TableModelBloco.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+            <state relative-caret-position="366">
+              <caret line="433" column="22" selection-start-line="433" selection-start-column="22" selection-end-line="433" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2036#2125#0" expanded="true" />
+                <element signature="e#1787#22210#0" />
+                <element signature="e#6577#6578#0" expanded="true" />
+                <element signature="e#6641#6642#0" expanded="true" />
+                <element signature="e#8131#8132#0" expanded="true" />
+                <element signature="e#8190#8191#0" expanded="true" />
+                <element signature="e#22651#23514#0" />
+                <element signature="e#23728#24537#0" />
+                <element signature="e#26457#26850#0" />
+                <element signature="e#26856#28332#0" />
+                <element signature="e#28338#29278#0" />
+                <element signature="e#29285#30226#0" />
+                <element signature="e#30232#31627#0" />
+                <element signature="e#31633#31989#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastroCota.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+              <folding>
+                <element signature="e#3240#3241#0" expanded="true" />
+                <element signature="e#3300#3301#0" expanded="true" />
+                <element signature="e#10383#10384#0" expanded="true" />
+                <element signature="e#10444#10445#0" expanded="true" />
+                <element signature="e#13839#13926#0" expanded="true" />
+                <element signature="e#15509#15733#0" expanded="true" />
+                <element signature="e#15732#15733#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-440">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+              <folding>
+                <element signature="method#Deletar#0;class#AbstractDao#0" />
+                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="method#findAll#0;class#AbstractDao#0" />
+                <element signature="method#findAll#1;class#AbstractDao#0" />
+                <element signature="e#3172#3173#0" expanded="true" />
+                <element signature="e#3240#3241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="510">
+              <caret line="471" column="40" lean-forward="true" selection-start-line="471" selection-start-column="40" selection-end-line="471" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadastraHotel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="523" column="117" lean-forward="true" selection-start-line="523" selection-start-column="117" selection-end-line="523" selection-end-column="117" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#471#680#0" />
-                <element signature="e#1138#1227#0" expanded="true" />
-                <element signature="e#889#26137#0" />
-                <element signature="e#3729#3730#0" expanded="true" />
-                <element signature="e#3787#3788#0" expanded="true" />
-                <element signature="e#4097#4098#0" expanded="true" />
-                <element signature="e#4166#4167#0" expanded="true" />
-                <element signature="e#8627#8628#0" expanded="true" />
-                <element signature="e#8693#8694#0" expanded="true" />
-                <element signature="e#8892#8893#0" expanded="true" />
-                <element signature="e#8953#8954#0" expanded="true" />
-                <element signature="e#9438#9439#0" expanded="true" />
-                <element signature="e#9499#9500#0" expanded="true" />
-                <element signature="e#12748#12749#0" expanded="true" />
-                <element signature="e#12812#12813#0" expanded="true" />
-                <element signature="e#13015#13016#0" expanded="true" />
-                <element signature="e#13078#13079#0" expanded="true" />
-                <element signature="e#13281#13282#0" expanded="true" />
-                <element signature="e#13344#13345#0" expanded="true" />
-                <element signature="e#16497#16498#0" expanded="true" />
-                <element signature="e#16562#16563#0" expanded="true" />
-                <element signature="e#16767#16768#0" expanded="true" />
-                <element signature="e#16831#16832#0" expanded="true" />
-                <element signature="e#17036#17037#0" expanded="true" />
-                <element signature="e#17100#17101#0" expanded="true" />
-                <element signature="e#20285#20286#0" expanded="true" />
-                <element signature="e#20346#20347#0" expanded="true" />
-                <element signature="e#20547#20548#0" expanded="true" />
-                <element signature="e#20609#20610#0" expanded="true" />
-                <element signature="e#20810#20811#0" expanded="true" />
-                <element signature="e#20872#20873#0" expanded="true" />
-                <element signature="e#30648#30735#0" expanded="true" />
-                <element signature="e#32277#32501#0" expanded="true" />
-                <element signature="e#32500#32501#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelecionaCota.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="515" column="77" lean-forward="true" selection-start-line="515" selection-start-column="77" selection-end-line="515" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadastroBloco.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1832#1833#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
-                <element signature="e#6455#6542#0" expanded="true" />
-                <element signature="e#8689#8913#0" expanded="true" />
-                <element signature="e#8912#8913#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bloco.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding>
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NovaPessoaForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="549" column="22" lean-forward="true" selection-start-line="549" selection-start-column="22" selection-end-line="549" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#NovaPessoaForm#0" />
-                <element signature="e#1175#1225#0" />
-                <element signature="e#1364#1876#0" />
-                <element signature="e#1882#2803#0" />
-                <element signature="e#3138#3227#0" expanded="true" />
-                <element signature="e#2889#30256#0" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -211,9 +306,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -223,22 +318,16 @@
       <find>cmbpais.add</find>
       <find>modoad</find>
       <find>validacaof</find>
+      <find>modeloperiododao</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/bloco/BlocoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/apartamento/ApartamentoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/model/pessoa/TipoPessoa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/MascaraMonetaria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/handler/AbstractDaoEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/Pais.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estados.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/enderecos/Endereco.java" />
@@ -262,34 +351,36 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelApartamento.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/pessoa/PessoaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pessoas/ConsultarPessoa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/endereco/Endereco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisa.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/pessoa/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCotaIntegrantres.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCotaTitular.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" />
         <option value="$PROJECT_DIR$/src/main/java/lib/model/bloco/Bloco.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/ConsultaHoteis.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/statuscota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/ConsultarCotas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -366,7 +457,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="enderecos" type="462c0819:PsiDirectoryNode" />
+              <item name="cotas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
@@ -375,16 +466,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="modeltable" type="462c0819:PsiDirectoryNode" />
+              <item name="swing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
@@ -393,25 +475,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto_cotas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bloco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projeto_cotas" type="b2602c69:ProjectViewProjectNode" />
@@ -434,13 +497,13 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="pri&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/JanelaPrincipal.java&#10;novoe&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/enderecos/NovoEndereco.java&#10;pessoa&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;cota&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/cotas/Cota.java&#10;pessoa.ja&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/pessoa/Pessoa.java&#10;endere&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/model/endereco/Endereco.java&#10;dao&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java&#10;consu&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/gui/pessoas/ConsultarPessoa.java&#10;abstra&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;enderecoda&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/imp/endereco/endereco/EnderecoDao.java&#10;abstr&#9;FILE&#9;file://C:/Devprojects/projeto_cotas/src/main/java/lib/dao/AbstractDao.java&#10;bairro&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java&#10;est&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/estado/Estado.java&#10;pais&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/pais/Pais.java&#10;cidade&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/model/endereco/cidade/Cidade.java&#10;novape&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/pessoas/NovaPessoaForm.java&#10;BlocoDa&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/lib/dao/imp/bloco/BlocoDao.java&#10;tab&#9;FILE&#9;file://C:/Devprojects/ControleCotas/src/main/java/gui/modeltable/TableModelCliente.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544397892098" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -474,25 +537,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="controlecotas" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -515,32 +574,19 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.controlecotas" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Maven.controlecotas" />
     </list>
     <recent_temporary>
       <list>
@@ -575,6 +621,8 @@
       <workItem from="1543831635925" duration="27790000" />
       <workItem from="1543917802670" duration="267000" />
       <workItem from="1544004767730" duration="8832000" />
+      <workItem from="1544281014023" duration="10924000" />
+      <workItem from="1544386130641" duration="12100000" />
     </task>
     <task id="LOCAL-00001" summary="projeto base">
       <created>1543918412385</created>
@@ -629,79 +677,78 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241384000" />
+    <option name="totallyTimeSpent" value="264408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.16693164" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11605723" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29868227" />
-      <window_info anchor="right" id="Bean Validation" order="7" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11497731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.0031796503" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.119476266" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.16530278" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" visible="true" weight="0.0" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14944357" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29868227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.073131956" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14944357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.0031796503" />
-      <window_info anchor="right" id="Bean Validation" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.16693164" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -711,90 +758,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="projeto base, cad pessoa e venda de cota" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/util/validacao/ValidacaoFacade.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="111" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/Pais.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/Endereco.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/provincia/ProvinciaDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/hotel/HotelDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/estado/Estados.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/pais/PaisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/provincia/Provincia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/hotel/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/bairro/Bairro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/lista/ObservableCollections.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-664">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -809,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -929,20 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/PessoaCota.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PessoaCotaDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelPessoaCota.java" />
@@ -957,20 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1002,22 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2224#2225#0" expanded="true" />
-            <element signature="e#2296#2297#0" expanded="true" />
-            <element signature="e#2503#2504#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2777#2778#0" expanded="true" />
-            <element signature="e#2842#2843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/JanelaPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1041,36 +959,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="549" column="22" lean-forward="true" selection-start-line="549" selection-start-column="22" selection-end-line="549" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NovaPessoaForm#0" />
-            <element signature="e#1175#1225#0" />
-            <element signature="e#1364#1876#0" />
-            <element signature="e#1882#2803#0" />
-            <element signature="e#3138#3227#0" expanded="true" />
-            <element signature="e#2889#30256#0" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="128" column="70" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="70" />
+        <state relative-caret-position="9129">
+          <caret line="541" column="27" selection-start-line="541" selection-start-column="27" selection-end-line="541" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4542#4631#0" expanded="true" />
-            <element signature="e#4293#20830#0" />
-            <element signature="e#20836#21559#0" />
-            <element signature="e#21565#22432#0" />
-            <element signature="e#22438#23552#0" />
-            <element signature="e#23809#24795#0" />
-            <element signature="e#24801#25421#0" />
-            <element signature="e#25427#27643#0" />
           </folding>
         </state>
       </provider>
@@ -1087,15 +988,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/enderecos/NovoEndereco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="354" column="82" selection-start-line="354" selection-start-column="82" selection-end-line="354" selection-end-column="82" />
+        <state relative-caret-position="17">
+          <caret line="128" column="70" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1391#1421#0" expanded="true" />
-            <element signature="e#23103#24044#0" />
-            <element signature="e#24050#25429#0" />
+            <element signature="e#4542#4631#0" expanded="true" />
+            <element signature="e#4293#20830#0" />
+            <element signature="e#20836#21559#0" />
+            <element signature="e#21565#22432#0" />
+            <element signature="e#22438#23552#0" />
+            <element signature="e#23809#24795#0" />
+            <element signature="e#24801#25421#0" />
+            <element signature="e#25427#27643#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pesquisa/Pesquisar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1104,94 +1021,225 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
-          <folding>
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/bairro/BairroDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-332">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelBloco.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/statuscota.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/endereco/pais/Pais.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="515" column="77" lean-forward="true" selection-start-line="515" selection-start-column="77" selection-end-line="515" selection-end-column="77" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/CadastraHotel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/endereco/estado/EstadoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="523" column="117" lean-forward="true" selection-start-line="523" selection-start-column="117" selection-end-line="523" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#471#680#0" />
-            <element signature="e#1138#1227#0" expanded="true" />
-            <element signature="e#889#26137#0" />
-            <element signature="e#3729#3730#0" expanded="true" />
-            <element signature="e#3787#3788#0" expanded="true" />
-            <element signature="e#4097#4098#0" expanded="true" />
-            <element signature="e#4166#4167#0" expanded="true" />
-            <element signature="e#8627#8628#0" expanded="true" />
-            <element signature="e#8693#8694#0" expanded="true" />
-            <element signature="e#8892#8893#0" expanded="true" />
-            <element signature="e#8953#8954#0" expanded="true" />
-            <element signature="e#9438#9439#0" expanded="true" />
-            <element signature="e#9499#9500#0" expanded="true" />
-            <element signature="e#12748#12749#0" expanded="true" />
-            <element signature="e#12812#12813#0" expanded="true" />
-            <element signature="e#13015#13016#0" expanded="true" />
-            <element signature="e#13078#13079#0" expanded="true" />
-            <element signature="e#13281#13282#0" expanded="true" />
-            <element signature="e#13344#13345#0" expanded="true" />
-            <element signature="e#16497#16498#0" expanded="true" />
-            <element signature="e#16562#16563#0" expanded="true" />
-            <element signature="e#16767#16768#0" expanded="true" />
-            <element signature="e#16831#16832#0" expanded="true" />
-            <element signature="e#17036#17037#0" expanded="true" />
-            <element signature="e#17100#17101#0" expanded="true" />
-            <element signature="e#20285#20286#0" expanded="true" />
-            <element signature="e#20346#20347#0" expanded="true" />
-            <element signature="e#20547#20548#0" expanded="true" />
-            <element signature="e#20609#20610#0" expanded="true" />
-            <element signature="e#20810#20811#0" expanded="true" />
-            <element signature="e#20872#20873#0" expanded="true" />
-            <element signature="e#30648#30735#0" expanded="true" />
-            <element signature="e#32277#32501#0" expanded="true" />
-            <element signature="e#32500#32501#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/bloco/CadastroBloco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        <state relative-caret-position="680">
+          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-            <element signature="e#6455#6542#0" expanded="true" />
-            <element signature="e#8689#8913#0" expanded="true" />
-            <element signature="e#8912#8913#0" expanded="true" />
+            <element signature="e#1563#1652#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#2696#2697#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/pessoas/NovaPessoaForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="549" column="22" selection-start-line="549" selection-start-column="22" selection-end-line="549" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#NovaPessoaForm#0" />
+            <element signature="e#1175#1225#0" />
+            <element signature="e#1364#1876#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/selecionacota/SelecionaCota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#1875#20201#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/Persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/hotel/HotelDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/CotasDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="997">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/ConsultarCotas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="154" column="44" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
+          <folding>
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2540#2541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/modeltable/TableModelCota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/ModeloPeriodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Periodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/cadastroCota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="471" column="40" lean-forward="true" selection-start-line="471" selection-start-column="40" selection-end-line="471" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/model/cotas/Cota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/AbstractDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="method#Deletar#0;class#AbstractDao#0" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="method#findAll#0;class#AbstractDao#0" />
+            <element signature="method#findAll#1;class#AbstractDao#0" />
+            <element signature="e#3172#3173#0" expanded="true" />
+            <element signature="e#3240#3241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/ModeloPeriodoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#637#638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lib/dao/imp/cotas/PeriodoCotaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/cotas/Vendercota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="433" column="22" selection-start-line="433" selection-start-column="22" selection-end-line="433" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2036#2125#0" expanded="true" />
+            <element signature="e#1787#22210#0" />
+            <element signature="e#6577#6578#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="e#8131#8132#0" expanded="true" />
+            <element signature="e#8190#8191#0" expanded="true" />
+            <element signature="e#22651#23514#0" />
+            <element signature="e#23728#24537#0" />
+            <element signature="e#26457#26850#0" />
+            <element signature="e#26856#28332#0" />
+            <element signature="e#28338#29278#0" />
+            <element signature="e#29285#30226#0" />
+            <element signature="e#30232#31627#0" />
+            <element signature="e#31633#31989#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/hotel/apartamento/CadastroApartamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="e#3240#3241#0" expanded="true" />
+            <element signature="e#3300#3301#0" expanded="true" />
+            <element signature="e#10383#10384#0" expanded="true" />
+            <element signature="e#10444#10445#0" expanded="true" />
+            <element signature="e#13839#13926#0" expanded="true" />
+            <element signature="e#15509#15733#0" expanded="true" />
+            <element signature="e#15732#15733#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1248,7 +1296,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ControleCotas</last-edited>
+          <last-edited>projeto_cotas</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

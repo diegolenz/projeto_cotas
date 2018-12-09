@@ -45,12 +45,12 @@ public class SelecionaCota extends javax.swing.JDialog {
         tabelaHotel.setEnabledAt(0,false);
         tabelaHotel.setEnabledAt(1,false);
         tabelaHotel.setEnabledAt(2, false);
-        tabelaHotel.setEnabledAt(3,false);
+     //   tabelaHotel.setEnabledAt(3,false);
     }
 
     public interface Callback {
 
-        void handle(Cota cota);
+        void handle(Apartamento apartamento);
     }
 
 
@@ -97,16 +97,6 @@ public class SelecionaCota extends javax.swing.JDialog {
         btnselecionarapartamento = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tabelaapartamento = new javax.swing.JTable();
-        pnlcota = new javax.swing.JPanel();
-        jlabel = new javax.swing.JLabel();
-        cmbselecionacota = new javax.swing.JComboBox<>();
-        edtdescricaocota = new javax.swing.JTextField();
-        brnpesquisarcota = new javax.swing.JButton();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        tabelacota = new javax.swing.JTable();
-        btnvoltarcota = new javax.swing.JButton();
-        btnselecionarcota = new javax.swing.JButton();
-        btnvisualizarcota = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("selecao");
@@ -373,99 +363,6 @@ public class SelecionaCota extends javax.swing.JDialog {
 
         tabelaHotel.addTab("Apartamento", pnlapartamento);
 
-        pnlcota.setBackground(new java.awt.Color(255, 255, 255));
-
-        jlabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlabel.setText("Selecine a cota");
-
-        cmbselecionacota.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Por apartamento" }));
-
-        brnpesquisarcota.setText("pesquisar");
-        brnpesquisarcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brnpesquisarcotaActionPerformed(evt);
-            }
-        });
-
-        tabelacota.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane4.setViewportView(tabelacota);
-
-        btnvoltarcota.setText("Voltar");
-        btnvoltarcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnvoltarcotaActionPerformed(evt);
-            }
-        });
-
-        btnselecionarcota.setText("selecionar");
-        btnselecionarcota.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnselecionarcotaActionPerformed(evt);
-            }
-        });
-
-        btnvisualizarcota.setText("visualizar cotas");
-
-        javax.swing.GroupLayout pnlcotaLayout = new javax.swing.GroupLayout(pnlcota);
-        pnlcota.setLayout(pnlcotaLayout);
-        pnlcotaLayout.setHorizontalGroup(
-            pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlcotaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlcotaLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnvoltarcota, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnvisualizarcota, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnselecionarcota, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlcotaLayout.createSequentialGroup()
-                        .addComponent(cmbselecionacota, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(edtdescricaocota, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(brnpesquisarcota, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-            .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnlcotaLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jScrollPane4)
-                    .addContainerGap()))
-        );
-        pnlcotaLayout.setVerticalGroup(
-            pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlcotaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmbselecionacota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(edtdescricaocota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(brnpesquisarcota))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 352, Short.MAX_VALUE)
-                .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnvoltarcota)
-                    .addComponent(btnselecionarcota)
-                    .addComponent(btnvisualizarcota))
-                .addGap(26, 26, 26))
-            .addGroup(pnlcotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnlcotaLayout.createSequentialGroup()
-                    .addGap(70, 70, 70)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(76, Short.MAX_VALUE)))
-        );
-
-        tabelaHotel.addTab("Cota", pnlcota);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -481,13 +378,12 @@ public class SelecionaCota extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void brnpesquisarhtlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnpesquisarhtlActionPerformed
-        // TODO add your handling code here:
+    private void brnpesquisarhtlActionPerformed(java.awt.event.ActionEvent evt) {
         TableModelPessoa modelo=new TableModelPessoa();
         List listhotel =hoteldao.listar();
         this.tabelahotel.setModel(modelo);
         modelo.setList(listhotel.toArray());
-    }//GEN-LAST:event_brnpesquisarhtlActionPerformed
+    }
 
     private void btnproseguirhotelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnproseguirhotelActionPerformed
         // TODO add your handling code here:
@@ -500,14 +396,12 @@ public class SelecionaCota extends javax.swing.JDialog {
         } else JOptionPane.showMessageDialog(this, "Selecione um hotel para prosseguir");
     }//GEN-LAST:event_btnproseguirhotelActionPerformed
 
-    private void brnpesquisarblocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnpesquisarblocoActionPerformed
-        // TODO add your handling code here:
-       // edtdescricaobloco.setText(hotelselecionado.getNome());
+    private void brnpesquisarblocoActionPerformed(java.awt.event.ActionEvent evt) {
         TableModelBloco modelo=new TableModelBloco();
-        List listbloco =blocodao.listarporhotel(hotelselecionado);
+        List listbloco = hotelselecionado.getBlocos();
         this.tabelabloco.setModel(modelo);
         modelo.setList(listbloco.toArray());
-    }//GEN-LAST:event_brnpesquisarblocoActionPerformed
+    }
 
     private void btnselecionarblocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselecionarblocoActionPerformed
         if (this.tabelabloco.getSelectedRow() >= 0) {
@@ -542,35 +436,12 @@ public class SelecionaCota extends javax.swing.JDialog {
             Integer id = (Integer) this.tabelaapartamento.getValueAt(this.tabelaapartamento.getSelectedRow(), 0);
             apartamentoselecionado = (Apartamento) apartamentodao.carregar(id);
             edtdescricaocotas.setText(String.valueOf(apartamentoselecionado.getNumero()));
-            this.tabelaHotel.setSelectedIndex(3);
-
-        } else JOptionPane.showMessageDialog(this, "Selecione um apartamento para prosseguir");
-    }//GEN-LAST:event_btnselecionarapartamentoActionPerformed
-
-    private void brnpesquisarcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnpesquisarcotaActionPerformed
-        // TODO add your handling code here:
-        TableModelCota modelo=new TableModelCota();
-        cotadao=new CotasDao();
-        List list =cotadao.listarporapartamento(apartamentoselecionado);
-        this.tabelacota.setModel(modelo);
-        modelo.setList(list.toArray());
-    }//GEN-LAST:event_brnpesquisarcotaActionPerformed
-
-    private void btnvoltarcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvoltarcotaActionPerformed
-        // TODO add your handling code here:
-        this.tabelaHotel.setSelectedIndex(2);
-
-    }//GEN-LAST:event_btnvoltarcotaActionPerformed
-
-    private void btnselecionarcotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselecionarcotaActionPerformed
-        if (this.tabelacota.getSelectedRow() >= 0) {
-            Integer id = (Integer) this.tabelacota.getValueAt(this.tabelacota.getSelectedRow(), 0);
-            cotaselecionada= (Cota) cotadao.carregar(id);
-            callback.handle(cotaselecionada);
+           // this.tabelaHotel.setSelectedIndex(3);
+            this.callback.handle(apartamentoselecionado);
             dispose();
 
         } else JOptionPane.showMessageDialog(this, "Selecione um apartamento para prosseguir");
-    }//GEN-LAST:event_btnselecionarcotaActionPerformed
+    }//GEN-LAST:event_btnselecionarapartamentoActionPerformed
 
     private void tabelahotelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelahotelMouseClicked
         // TODO add your handling code here:
@@ -626,23 +497,17 @@ public class SelecionaCota extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton brnpesquisarapartamento;
     private javax.swing.JButton brnpesquisarbloco;
-    private javax.swing.JButton brnpesquisarcota;
     private javax.swing.JButton brnpesquisarhtl;
     private javax.swing.JToggleButton btnproseguirhotel;
     private javax.swing.JButton btnselecionarapartamento;
     private javax.swing.JButton btnselecionarbloco;
-    private javax.swing.JButton btnselecionarcota;
-    private javax.swing.JButton btnvisualizarcota;
     private javax.swing.JButton btnvoltarapartamento;
     private javax.swing.JButton btnvoltarbloco;
-    private javax.swing.JButton btnvoltarcota;
     private javax.swing.JComboBox<String> cmbseleciona;
     private javax.swing.JComboBox<String> cmbselecionaapartamento;
     private javax.swing.JComboBox<String> cmbselecionabloco;
-    private javax.swing.JComboBox<String> cmbselecionacota;
     private javax.swing.JTextField edtdescricaoapartamento;
     private javax.swing.JTextField edtdescricaobloco;
-    private javax.swing.JTextField edtdescricaocota;
     private javax.swing.JTextField edtdescricaocotas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -650,16 +515,12 @@ public class SelecionaCota extends javax.swing.JDialog {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JLabel jlabel;
     private javax.swing.JPanel pnlapartamento;
     private javax.swing.JPanel pnlbloco;
-    private javax.swing.JPanel pnlcota;
     private javax.swing.JPanel pnlhotel;
     private javax.swing.JTabbedPane tabelaHotel;
     private javax.swing.JTable tabelaapartamento;
     private javax.swing.JTable tabelabloco;
-    private javax.swing.JTable tabelacota;
     private javax.swing.JTable tabelahotel;
     // End of variables declaration//GEN-END:variables
 }

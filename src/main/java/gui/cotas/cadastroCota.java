@@ -5,28 +5,83 @@
  */
 package gui.cotas;
 
+import gui.cotas.modelocotas.PesquisarModelo;
 import gui.modeltable.TableModelBloco;
+import gui.modeltable.TableModelModeloPeriodo;
+import gui.modeltable.TableModelperiodo;
+import gui.swing.DefaultComboBoxModel;
+import lib.dao.imp.apartamento.ApartamentoDao;
+import lib.dao.imp.cotas.CotasDao;
+import lib.dao.imp.cotas.ModeloPeriodoDao;
+import lib.dao.imp.cotas.PeriodoCotaDao;
+import lib.dao.imp.hotel.HotelDao;
+import lib.model.apartamento.Apartamento;
 import lib.model.bloco.Bloco;
+import lib.model.cotas.Cota;
+import lib.model.cotas.ModeloPeriodo;
+import lib.model.cotas.Periodo;
+import lib.model.hotel.Hotel;
+import gui.cotas.modelocotas.PesquisarModelo;
 
+import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
  *
  * @author diego.lenz
  */
+
+//clsse que salva um modelo de cota->modelo periodo
+
 public class cadastroCota extends javax.swing.JDialog {
 
     /**
      * Creates new form cadastroCota
      */
+    private DefaultComboBoxModel cmbblocolmodel=new DefaultComboBoxModel();
+    private DefaultComboBoxModel cmbhotelmodel=new DefaultComboBoxModel();
+    private DefaultComboBoxModel cmbapartamentomodel=new DefaultComboBoxModel();
+    private TableModelperiodo modelotabela =new TableModelperiodo();
+    private ModeloPeriodo cota=new ModeloPeriodo();
+    private HotelDao hotelDao=new HotelDao();
+    private Hotel hotel;
+    private Date datacheckin=new Date();
+    private Date datacheckout=new Date();
+    private Periodo periodo;
+    private Bloco bloco;
+    private List<Hotel> hoteis=new ArrayList<>();
+    private List<Bloco> blocos=new ArrayList<>();
+    private List<Apartamento> apartamentos=new ArrayList<>();
+    private List <Periodo> periodos=new ArrayList<>();
 
-
-
+    public void setobj(Hotel hotel, List<Bloco> blocos, List<Apartamento> apartamentos){
+       /* this.cmbhotelmodel.addElement(hotel);
+        this.edt.setText(hotel.getNome());
+        for (Bloco b: blocos){
+            cmbblocolmodel.addElement(b.getDescricao());
+        }
+        this.cmbbloco.setModel(cmbblocolmodel);
+        this.blocos=blocos; */
+    }
 
     public cadastroCota(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+
+        hoteis=hotelDao.listar();
+        this.cmbhotelmodel=new DefaultComboBoxModel();
+        for (Hotel h:hoteis){
+            cmbhotelmodel.addElement(h.getNome());
+        }
+
+
+
+
+
+
     }
 
     /**
@@ -40,65 +95,44 @@ public class cadastroCota extends javax.swing.JDialog {
 
         jLocaleChooser1 = new com.toedter.components.JLocaleChooser();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        cmbhotel = new javax.swing.JComboBox<>();
-        cmbap = new javax.swing.JComboBox<>();
-        cmbbloco = new javax.swing.JComboBox<>();
         edtdesc = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        cmbsituacao = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
         edtvaloaq = new javax.swing.JFormattedTextField();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jCalendar1 = new com.toedter.calendar.JCalendar();
+        edtvalormensalidadr = new javax.swing.JFormattedTextField();
+        calendario = new com.toedter.calendar.JCalendar();
         jScrollPane1 = new javax.swing.JScrollPane();
         tbldiascotas = new javax.swing.JTable();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         edtdtcheckin = new javax.swing.JTextField();
         edtcheckout = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        edtano = new javax.swing.JTextField();
-        edtmes = new javax.swing.JTextField();
-        btnadddiascota = new javax.swing.JButton();
+        btnadddias = new javax.swing.JButton();
         btnrmvdiascota = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         btnsalvacota = new javax.swing.JButton();
         btncancelar = new javax.swing.JButton();
+        btnaddcheckin = new javax.swing.JButton();
+        btnaddout = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        btnaddmodelo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastrar cota");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setText("hotel");
-
-        jLabel2.setText("bloco");
-
         jLabel3.setText("descricao");
-
-        jLabel4.setText("apartamento");
 
         jLabel5.setText("valor de aquisicao");
 
         jLabel6.setText("mensalidade");
 
-        cmbsituacao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-        cmbsituacao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbsituacaoActionPerformed(evt);
-            }
-        });
-
-        jLabel7.setText("situacao");
-
         edtvaloaq.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
 
-        jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
+        edtvalormensalidadr.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0.00"))));
 
         tbldiascotas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -114,17 +148,58 @@ public class cadastroCota extends javax.swing.JDialog {
 
         jLabel9.setText("check out");
 
-        jLabel10.setText("ano");
+        btnadddias.setText("adicionar periodo");
+        btnadddias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnadddiasActionPerformed(evt);
+            }
+        });
 
-        jLabel11.setText("mes");
-
-        btnadddiascota.setText("adicionar");
-
-        btnrmvdiascota.setText("remover");
+        btnrmvdiascota.setText("remover periodo");
+        btnrmvdiascota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnrmvdiascotaActionPerformed(evt);
+            }
+        });
 
         btnsalvacota.setText("salvar");
+        btnsalvacota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                try {
+                    btnsalvacotaActionPerformed(evt);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         btncancelar.setText("cancelar");
+        btncancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncancelarActionPerformed(evt);
+            }
+        });
+
+        btnaddcheckin.setText("adicionar");
+        btnaddcheckin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddcheckinActionPerformed(evt);
+            }
+        });
+
+        btnaddout.setText("adicionar");
+        btnaddout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddoutActionPerformed(evt);
+            }
+        });
+
+        btnaddmodelo.setText("modelo");
+        btnaddmodelo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddmodeloActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -134,126 +209,105 @@ public class cadastroCota extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jSeparator2)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(108, 108, 108))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addGap(51, 51, 51)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel8))
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGap(0, 25, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(cmbhotel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(edtdesc)
-                                                .addGap(32, 32, 32)
-                                                .addComponent(jLabel7)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(cmbsituacao, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(edtcheckout, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btnaddout))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(edtdtcheckin, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btnaddcheckin)))
+                                        .addGap(613, 613, 613))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(cmbbloco, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(jLabel4))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(edtdesc, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(134, 134, 134)
                                         .addComponent(jLabel5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(18, 18, 18)
                                         .addComponent(edtvaloaq, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(38, 38, 38)
-                                        .addComponent(jLabel6)))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jFormattedTextField1)
-                                    .addComponent(cmbap, 0, 59, Short.MAX_VALUE)))
+                                        .addGap(51, 51, 51)
+                                        .addComponent(jLabel6)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(edtvalormensalidadr, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel8)
+                                .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(89, 89, 89))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btnadddias)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnrmvdiascota, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnaddmodelo, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(26, 26, 26))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(edtdtcheckin, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(edtmes, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(36, 36, 36)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel10)
-                                        .addComponent(jLabel9))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(edtcheckout, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                                        .addComponent(edtano)))
-                                .addComponent(jCalendar1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnadddiascota))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
-                        .addComponent(btnrmvdiascota)
-                        .addGap(468, 468, 468))))
-            .addComponent(jSeparator1)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btncancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(btnsalvacota, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84))
+                        .addComponent(jSeparator1)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btncancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnsalvacota, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(54, 54, 54)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(cmbhotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbbloco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
                     .addComponent(edtdesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(cmbsituacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel5)
                     .addComponent(edtvaloaq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(61, 61, 61)
+                    .addComponent(jLabel6)
+                    .addComponent(edtvalormensalidadr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(edtmes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10)
-                            .addComponent(edtano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                            .addComponent(btnadddias)
+                            .addComponent(btnrmvdiascota)
+                            .addComponent(btnaddmodelo)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(edtdtcheckin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9)
-                            .addComponent(edtcheckout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnaddcheckin)
+                            .addComponent(jLabel8))
                         .addGap(18, 18, 18)
-                        .addComponent(btnadddiascota))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnrmvdiascota)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9)
+                            .addComponent(edtcheckout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnaddout))))
+                .addGap(0, 29, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnsalvacota)
-                    .addComponent(btncancelar))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btncancelar)
+                    .addComponent(btnsalvacota))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -269,18 +323,115 @@ public class cadastroCota extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbsituacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbsituacaoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbsituacaoActionPerformed
+    public void carregacota(){
+        cota.setPeriodos(periodos);
+        cota.setDescricao(edtdesc.getText());
+        cota.setValor(Double.parseDouble(edtvaloaq.getText().replace(',','.')));
+        cota.setValormensalidade(Double.parseDouble(edtvalormensalidadr.getText().replace(',','.')));
+    }
+    private void btnsalvacotaActionPerformed(java.awt.event.ActionEvent evt) throws Exception {
+        ModeloPeriodoDao cotasDao=new ModeloPeriodoDao();
 
+        if (cota==null){
+            JOptionPane.showMessageDialog(this, "falha ao salvar");
+            return;
+        }
+        carregacota();
+        if(cota.getId()!=null){
+            if (periodos.size()==0){
+                JOptionPane.showMessageDialog(this, "nenhum periodo foi adicionado na tabela");
+            }
+            try {
+                cotasDao.Alterar(cota);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            PeriodoCotaDao daoperiodo=new PeriodoCotaDao();
+            for (Periodo p: periodos) {
+                daoperiodo.Inserir(p);
+            }
+            cota.setPeriodos(periodos);
+            cotasDao.Inserir(cota);
+            JOptionPane.showMessageDialog(this, "cota salva com sucesso" );
+            dispose();
+        }
+    }
+
+    private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncancelarActionPerformed
+
+
+
+    private void cmbapActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void cmbsituacaoActionPerformed(java.awt.event.ActionEvent evt) {
+    }
+
+    private void btnescmodeloActionPerformed(java.awt.event.ActionEvent evt) {
+    }
+
+    private void btnadddiasActionPerformed(java.awt.event.ActionEvent evt) {
+        periodo=new Periodo();
+        periodo.setDtcheckin(this.datacheckin);
+        periodo.setDtcheckout(this.datacheckout);
+        periodos.add(periodo);
+        this.modelotabela.setList(periodos.toArray());
+        this.tbldiascotas.setModel(modelotabela);
+    }
+
+    private void btnrmvdiascotaActionPerformed(java.awt.event.ActionEvent evt) {
+        if (this.tbldiascotas.getSelectedRow() < 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum periodo selecionado");
+            return;
+        } else {
+            periodo = new Periodo();
+            periodo = periodos.get(tbldiascotas.getSelectedRow());
+            periodos.remove(periodo);
+            modelotabela.setList(periodos.toArray());
+            this.tbldiascotas.setModel(modelotabela);
+        }
+    }
+
+    private void btnaddcheckinActionPerformed(java.awt.event.ActionEvent evt) {
+        datacheckin=this.calendario.getDate();
+        datacheckin.setHours(12);
+        datacheckin.setMinutes(00);
+        datacheckin.setSeconds(00);
+        this.edtdtcheckin.setText(datacheckin.toString());
+
+    }
+
+    private void btnaddoutActionPerformed(java.awt.event.ActionEvent evt) {
+        datacheckout=this.calendario.getDate();
+        datacheckout.setHours(12);
+        datacheckout.setMinutes(00);
+        datacheckout.setSeconds(00);
+        this.edtcheckout.setText(datacheckout.toString());
+    }
+
+    private void btnaddmodeloActionPerformed(java.awt.event.ActionEvent evt) {
+        PesquisarModelo.Callback callback = (modeloperiodo) ->{
+            periodos=modeloperiodo.getPeriodos();
+            modelotabela.setList(cota.getPeriodos().toArray());
+            this.tbldiascotas.setModel(modelotabela);
+
+        };
+        PesquisarModelo pesquisarModelo=new PesquisarModelo(this, true, callback);
+        pesquisarModelo.setVisible(true);
+
+    }
     /**
      * @param args the command line arguments
      */
@@ -324,37 +475,29 @@ public class cadastroCota extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnadddiascota;
+    private javax.swing.JButton btnaddcheckin;
+    private javax.swing.JButton btnadddias;
+    private javax.swing.JButton btnaddmodelo;
+    private javax.swing.JButton btnaddout;
     private javax.swing.JButton btncancelar;
     private javax.swing.JButton btnrmvdiascota;
     private javax.swing.JButton btnsalvacota;
-    private javax.swing.JComboBox<String> cmbap;
-    private javax.swing.JComboBox<String> cmbbloco;
-    private javax.swing.JComboBox<String> cmbhotel;
-    private javax.swing.JComboBox<String> cmbsituacao;
-    private javax.swing.JTextField edtano;
+    private com.toedter.calendar.JCalendar calendario;
     private javax.swing.JTextField edtcheckout;
     private javax.swing.JTextField edtdesc;
     private javax.swing.JTextField edtdtcheckin;
-    private javax.swing.JTextField edtmes;
     private javax.swing.JFormattedTextField edtvaloaq;
-    private com.toedter.calendar.JCalendar jCalendar1;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JFormattedTextField edtvalormensalidadr;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private com.toedter.components.JLocaleChooser jLocaleChooser1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable tbldiascotas;
     // End of variables declaration//GEN-END:variables
 }
